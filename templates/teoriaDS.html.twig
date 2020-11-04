@@ -1,0 +1,171 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+    </div>
+    <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+        <div>Te encuentras en:</div>
+        <ul>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Fundamentos de los Sistemas Operativos </a></li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Fundamentos de los Sistemas Operativos - Material Did&aacute;ctico</li>
+        </ul>
+    </nav>
+
+    <H2 class="title-xl color-orange ml-5">Material did&aacute;ctico - teor&iacute;a</H2>
+
+    <table class="ml-5 tablesaw" data-tablesaw-mode="stack">
+        <caption>Material de consulta para unidades te&oacute;ricas</caption>
+        <thead>
+        <tr>
+            <th> Tema </th>
+            <th> Materiales </th>
+        </thead>
+
+        <tbody>
+        <TR>
+            <td class="celda_titulo">
+                <h5 class="title-s">Tema 1</h5>
+                <h4 class="title-m color-orange">Conceptos generales</h4>
+            </td>
+            <td>
+                <ul class="ulpgcds-list">
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-01-conceptos%20generales-ficha%20del%20estudiante.pdf" >Tema 1: Guía de estudio</a></li>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-01.1-qu%C3%A9%20es%20el%20sistema%20operativo.pdf" >1.1. ¿Qué es el sistema operativo?</a></li>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-01.2-estructura%20del%20computador.pdf" >1.2. Estructura del computador y SO</a></li>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-01.3-estructura%20del%20sistema%20operativo.pdf" >1.3. Estructura del sistema operativo</a></li>
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/carreful.pdf" >Ejercicio de la cola del supermercado</a></li>
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-01-ficha%20tipos%20de%20sistemas.pdf" >Tipos de sistemas: ficha y ejercicios</a></li>
+                    <li><a href="./FSO-01-glosario de términos.ods">Glosario de t&eacute;rminos (hoja de cálculo OpenOffice)</a></li>
+                </ul>
+            </td>
+        </TR>
+
+        <TR>
+            <td class="celda_titulo">
+                <h5 class="title-s">Tema 2</h5>
+                <h4 class="title-m color-orange">Procesos</h4>
+            </td>
+            <td>
+                <ul class="ulpgcds-list">
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-02.1-Procesos.pdf" >2.1. Procesos e hilos</a></li>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-02.2-Planificacion%20de%20procesos.pdf" >2.2. Planificación de CPU</a></li>
+                    <li>Ejercicios: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-02-ejercicios%20planificaci%C3%B3n%20CPU.pdf">planificación de CPU</a></li>
+                    <li><a href="FSO-02-glosario de términos.ods">Glosario de t&eacute;rminos</a></li>
+                    <li><a href="assets/videos/080716_Asig_SO_DONE_Diagramas_Gantt.m4v">Videotutorial: C&oacute;mo elaborar diagramas de Gantt</a></li>
+                </ul>
+            </td>
+        </TR>
+
+        <TR>
+            <td class="celda_titulo">
+                <h5 class="title-s">Tema 3</h5>
+                <h4 class="title-m color-orange">Concurrencia</h4>
+            </td>
+            <td>
+                <ul class="ulpgcds-list">
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-03.0-Concurrencia-intro.pdf" >Visión general del tema</a></li>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-03.1-Concurrencia.pdf" >3. Concurrencia</a></li>
+                    <li><a href="/videos/080527_DONE_Asig_SO_Concurrencia_parte-i.m4v">Videotutorial: Introducci&oacute;n a la concurrencia</a></li>
+                    <li>Ejemplos básicos en C (pthreads):
+                        <ul>
+                            <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/prueba_hilos_1.c">ejemplo 1</a></li>
+                            <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/prueba_hilos_2.c">ejemplo 2</a></li>
+                            <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/compartida.c">variable compartida</a></li>
+                        </ul>
+                    </li>
+                    <i>&rArr; compilarlos así:</i> <tt>cc <em>programa.c</em> -lpthread -o <em>programa</em></tt>
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-03-concurrencia%20sincronizacion%20y%20ejercicios.pdf" >Técnicas de sincronización (incluye ejercicios)</a></li>
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/Lista%20ejercicios%20concurrencia.pdf"> Lista de ejercicios de concurrencia (para la práctica de hilos) </a></li>
+                    <li><a href="FSO-03-glosario de términos.ods">Glosario de términos</a></li>
+                </ul>
+                        <!--        <a href="./FSO-03-Receta para resolver problemas de sincronizacion.pdf">Receta para resolver problemas de sincronizaci&oacute;n con sem&aacute;foros</a>
+	     Ejercicios:<a href="SO - hoja de ruta concurrencia.pdf">problemas de programación concurrente</a>-->
+            </td>
+        </TR>
+
+        <TR>
+            <td class="celda_titulo">
+                <h5 class="title-s">Tema 4</h5>
+                <h4 class="title-m color-orange">Memoria</h4>
+            </td>
+            <td>
+                <ul class="ulpgcds-list">
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-04.0-Memoria-intro.pdf" >Visión general del tema</a></li>
+                    <h3 class="title-l color-orange">Memoria contigua y paginación</h3>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-04.1-Memoria.pdf" >4.1. Gestión de la memoria</a></li>
+                    <li><a href="https://codex.cs.yale.edu/avi/os-book/OS9/slide-dir/PPT-dir/ch8.ppt">PPT del Silberschatz</a> (9th Edition, inglés)</li>
+                    <li>Figura: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO%2004%20traducci%C3%B3n%20de%20direcciones%20paginadas.pdf" >Traducción de direcciones paginadas</a></li>
+                    <li>Ejercicios: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-04-ejercicios%20de%20memoria%20paginada.pdf">memoria paginada</a></li>
+                    <h3 class="title-l color-orange">Memoria virtual</h3>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-04.2-Memoria%20virtual.pdf" >4.2. Memoria virtual</a></li>
+                    <li><a href="https://codex.cs.yale.edu/avi/os-book/OS9/slide-dir/PPT-dir/ch9.ppt">PPT del Silberschatz</a> (9th Edition, inglés)</li>
+                    <li>Ejercicios: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-04-ejercicios%20de%20memoria%20virtual.pdf">memoria virtual</a></li>
+                    <li><a href="FSO-04-glosario de términos.ods">Glosario de t&eacute;rminos</a></li>
+                </ul>
+            </td>
+        </TR>
+
+        <TR>
+            <td class="celda_titulo">
+                <h5 class="title-s">Tema 5</h5>
+                <h4 class="title-m color-orange">Archivos</h4>
+            </td>
+            <td>
+                <ul class="ulpgcds-list">
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-05.0-Archivos-intro.pdf" >Visión general del tema</a></li>
+                    <li>Diapos: <a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-05-Sistemas%20de%20archivos.pdf" >5. Sistemas de archivos</a></li>
+                    <li><a href="http://sopa.dis.ulpgc.es/fso/teoria/pdf/FSO-05-ejercicios%20sistemas%20de%20ficheros.pdf">Ejercicios sobre sistemas de archivos</a></li>
+                    <li><a href="FSO-05-glosario de terminos.ods">Glosario de t&eacute;rminos</a></li>
+                </ul>
+                <!-- - <b>NO SON NECESARIOS PARA el curso 2018/2019</b> -->
+            </td>
+        </TR>
+        </tbody>
+    </table>
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Material Did&aacute;ctico
+{% endblock %}
+
+{% block js %}
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <script src="https://designsystem.ulpgc.es/code/tablesaw/tablesaw.jquery.js"></script>
+    <script src="https://designsystem.ulpgc.es/code/tablesaw/tablesaw-init.js"></script>
+{% endblock %}

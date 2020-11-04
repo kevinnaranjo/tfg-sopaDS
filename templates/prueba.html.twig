@@ -1,0 +1,20 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    {% if pruebas is empty %}
+        <h4>No hay datos a mostrar</h4>
+    {% else %}
+
+        {% for prueba in pruebas %}
+            <div class="card my-3">
+                <div class="card-body">
+                    <p>{{ prueba.campo }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+
+{% block title %}
+    Foro - Politicum
+{% endblock %}

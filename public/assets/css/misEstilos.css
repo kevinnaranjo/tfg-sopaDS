@@ -1,0 +1,16 @@
+h1 {
+    /* Fondo */
+    /*background: #404040 url(ulpgc-logo-negativo-444.jpg) right no-repeat;*/
+    /*background: #002A63 url(ulpgc-logo-negativo-azul.jpg) right no-repeat; ESTE ES EL ORIGINAL QUE TIENE LA PAGINA*/
+    /*background-color: #FFA100 !important; /*fondo naranja*/
+    background-color: #0066A1 !important; /*fondo azul*/
+    min-height: 40px;
+    /*padding: 0.5em;*/
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white !important;
+    font-size: 140%;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+}

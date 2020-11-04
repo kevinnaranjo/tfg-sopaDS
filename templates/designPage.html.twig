@@ -1,21 +1,24 @@
 {% extends 'base/base.html.twig' %}
 
 {% block body %}
+
+     <div id="logo" style="width: 30%">
+         <a id="logoInicio" href="design"> <img src="assets/version_max_red_2t.svg"></a>
+     </div>
     <div>
-        <h1  class="title-xl color-blue"> FSO - Fundamentos de los Sistemas Operativos (DS1.0)
-            <img class="mt-0 float-right" src="/assets/css/ulpgc-logo-azul.jpg" alt="Error">
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
         </h1>
     </div>
 
     <div id="caja">
-        <h2 class="title-l color-blue">Moodle</h2>
+        <h2 class="title-l color-orange">Moodle</h2>
         <ul class="ulpgcds-list">
             <li>
                 <a href="https://cv-aepd.ulpgc.es/cv/ulpgctp20d/course/view.php?id=2045">Asignatura en el Campus Virtual ULPGC</a>
             </li>
         </ul>
 
-        <h2 class="title-l color-blue">Sobre la asignatura</h2>
+        <h2 class="title-l color-orange">Sobre la asignatura</h2>
         <ul class="ulpgcds-list">
             <li><a href="https://www.ulpgc.es/index.php?pagina=estudios&ver=weees003&tipoplan=&codigo=180_4008_40_00_1_2_40814">Proyecto docente</a></li>
             <li><a href="https://prezi.com/49p7nfzpefts">Presentación de la asignatura FSO </a></li>
@@ -23,7 +26,7 @@
 
         <ul class="ulpgcds-list">
         </ul>
-        <h2 class="title-l color-blue">Horarios y tutorías</h2>
+        <h2 class="title-l color-orange">Horarios y tutorías</h2>
         <ul class="ulpgcds-list">
             <li><span style="font-style: italic;">Profesores:</span>
 
@@ -46,14 +49,14 @@
                 </ul>
             </li>
         </ul>
-        <h2 class="title-l color-blue">Material de Teoría</h2>
+        <h2 class="title-l color-orange">Material de Teoría</h2>
         <ul class="ulpgcds-list">
             <li><a href="teoria">Diapositivas, ejercicios y documentos para la teoría</a></li>
             <li><a
                         href="https://docs.google.com/spreadsheets/d/1yl9ykYAOpSF39YAf8_gyFUlxQHJpUyNlL-vcG31vY4c/edit?usp=sharing">
                     Lista de erratas del libro de teoría</a> (Editorial Paraninfo)</li>
         </ul>
-        <h2 class="title-l color-blue">Material de Prácticas</h2>
+        <h2 class="title-l color-orange">Material de Prácticas</h2>
         <ul class="ulpgcds-list">
             <li>
                 <a href="https://cv-aepd.ulpgc.es/cv/ulpgctp20d/course/view.php?id=2045">Prácticas en el Campus Virtual ULPGC</a>
@@ -70,13 +73,17 @@
 
         </ul>
 
-        <h2 class="title-l color-blue">Exámenes</h2>
+        <h2 class="title-l color-orange">Exámenes</h2>
         <ul class="ulpgcds-list">
             <!--
               <li> <a href="https://youtu.be/e5E3uL62CiY">Instrucciones para rellenar el test (vídeo)</a></li>
             -->
+            {#<li>
+                <a href="examenes/instrucciones examen FSO.pdf">Instrucciones para el examen</a>
+            </li>#}
+
             <li>
-                <a href="examenes/instrucciones examen FSO.pdf">Exámenes de cursos anteriores y soluciones</a>
+                <a href="http://sopa.dis.ulpgc.es/fso/examenes/instrucciones%20examen%20FSO.pdf">Instrucciones para el examen</a>
             </li>
 
             <li>
@@ -117,7 +124,7 @@
 {% endblock %}
 
 {% block title %}
-    Fundamentos de los Sistemas Operativos (Grado en Ingeniería Informática)
+    ULPGC · Fundamentos de los Sistemas Operativos (Grado en Ingeniería Informática)
 {% endblock %}
 
 {% block js %}

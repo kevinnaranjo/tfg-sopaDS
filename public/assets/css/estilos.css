@@ -4,12 +4,16 @@ body {
         background-color: white;
 /*        background-image: url("/img/bgsopa2.gif");
 */
-        font-family: Helvetica,Arial,sans-serif;
+        font-family: "Rubik", sans-serif;
         font-size: 1em;
 }
 
 h1 {
-        color: navy;
+        color: white;
+}
+
+#logoInicio:hover {
+	background-color: inherit !important;
 }
 
 /* Letra inicial mas grande  */
@@ -21,7 +25,7 @@ h2 {
 
 a {
   text-decoration: none;
-  border-bottom: 1px dashed #c0c0c0;
+  /*border-bottom: 1px dashed #c0c0c0;*/
 }
 /* Fondo de enlaces levemente amarillo */
 a:hover { background-color: #FfFfA0 }
@@ -43,7 +47,7 @@ h1.titulo_portada {
 	background-color: white;
 	background: url(ulpgc-logo-azul.jpg) no-repeat right;
 	font-size: 160%;
-	color: #002F67;
+	/*color: #002F67;*/
 	margin-left: 30px;
 	min-width: 400px;
 	font-family: Helvetica, "Arial", sans-serif;
@@ -66,7 +70,7 @@ h1.portada {
 	padding-top: 1em;
 	padding-bottom: 0em;
 	background: none;
-	color: navy;
+	/*color: navy;*/
 }
 
 /* Entradilla de la pagina */
@@ -126,6 +130,11 @@ ul.lista_asignatura {
 	text-align: left; 
 	font-family: "Trebuchet MS", serif;
 	font-size: small;
+}
+
+.elementosIzquierda{
+
+	margin-left: 240px;
 }
 
 /*

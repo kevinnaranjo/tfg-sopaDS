@@ -1,0 +1,139 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="#"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+        <a href="teoria">teoria</a>
+        <a href="teoriaSinTabla">teoria sin tabla</a>
+        <a href="bbdd">examenes</a>
+    </div>
+
+    <div class="row">
+        <div class="col-2 title-m color-orange ml-5">Moodle</div>
+        <div class="col-3 title-m">
+            <ul class="ulpgcds-list">
+                <li> <a href="https://cv-aepd.ulpgc.es/cv/ulpgctp20d/course/view.php?id=2045">Asignatura en el Campus Virtual ULPGC</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 col-md-2 title-m color-orange ml-5">Sobre la asignatura</div>
+        <div class="col-3 col-md-4 title-m">
+            <ul class="ulpgcds-list">
+                <li><a href="https://www.ulpgc.es/index.php?pagina=estudios&ver=weees003&tipoplan=&codigo=180_4008_40_00_1_2_40814">Proyecto docente</a></li>
+                <li><a href="https://prezi.com/49p7nfzpefts">Presentación de la asignatura FSO </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=" col-2 col-md-2 title-m color-orange ml-5">Horarios y tutorías</div>
+        <div class="col-3 col-md-4 title-m">
+            <ul class="ulpgcds-list">
+                <li><span style="font-style: italic;">Profesores:</span>
+
+                    <ul>
+                        <li><a href="http://www.dis.ulpgc.es/profesorado/ficha.asp?id=57">
+                                José Miguel Santos Espino
+                            </a> (coordinador de la asignatura)</li>
+                        <li>
+                            <a href="http://www.dis.ulpgc.es/profesorado/ficha.asp?id=55">Francisco J. Santana Pérez</a>  (responsable de prácticas)
+                        </li>
+                        <li>
+                            <a href="http://www.dis.ulpgc.es/profesorado/ficha.asp?id=63">Alexis Quesada Arencibia</a>
+                        </li>
+                        <li><a href="http://www.dis.ulpgc.es/profesorado/ficha.asp?id=49">
+                                Juan Carlos Quevedo Losada</a>
+                        </li>
+                        <li><a href="http://www.dis.ulpgc.es/profesorado/ficha.asp?id=22">
+                                Jesús García Quesada</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 col-md-2 title-m color-orange ml-5">Material de Teoría</div>
+        <div class="col-3 col-md-4 title-m">
+            <ul class="ulpgcds-list">
+                <li><a href="teoria">Diapositivas, ejercicios y documentos para la teoría</a></li>
+                <li><a href="https://docs.google.com/spreadsheets/d/1yl9ykYAOpSF39YAf8_gyFUlxQHJpUyNlL-vcG31vY4c/edit?usp=sharing">
+                        Lista de erratas del libro de teoría</a> (Editorial Paraninfo)
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=" col-2 col-md-2 title-m color-orange ml-5">Material de Prácticas</div>
+        <div class="col-3 col-md-4 title-m">
+            <ul class="ulpgcds-list">
+                <li>
+                    <a href="https://cv-aepd.ulpgc.es/cv/ulpgctp20d/course/view.php?id=2045">Prácticas en el Campus Virtual ULPGC</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 col-md-2 title-m color-orange ml-5">Exámenes</div>
+        <div class="col-3 col-md-4 title-m">
+            <ul class="ulpgcds-list">
+                <li>
+                    <a href="http://sopa.dis.ulpgc.es/fso/examenes/instrucciones%20examen%20FSO.pdf">Instrucciones para el examen</a>
+                </li>
+                <li>
+                    <a href="examenes">Exámenes de cursos anteriores y soluciones</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos (Grado en Ingeniería Informática)
+{% endblock %}
+
+{% block js %}
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+{% endblock %}

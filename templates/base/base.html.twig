@@ -7,16 +7,18 @@
         <link rel="stylesheet" type="text/css" href="/css/lista_asignatura.css">#}
         <link rel="shortcut icon" href="http://www.ulpgc.es/sites/all/themes/ulpgc/favicon.ico" type="image/vnd.microsoft.icon" />
         {% block stylesheets %}
+{#            <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/lista_asignatura.css') }}"/>#}
+            {#            <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/estilos.css') }}"/>#}
+                        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/misEstilos.css') }}"/>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/lista_asignatura.css') }}"/>
-            <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/estilos.css') }}"/>
             <link rel="stylesheet" type="text/css"  href="https://cdn.ulpgc.es/ulpgcds/1.0/css/ulpgcds.css" media="all" />
+            <link rel="stylesheet" href="https://designsystem.ulpgc.es/code/tablesaw/tablesaw.css">
         {% endblock %}
 
 
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block js %}{% endblock %}
     </body>
 </html>
