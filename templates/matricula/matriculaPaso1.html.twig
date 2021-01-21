@@ -1,0 +1,279 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+<div id="logo" style="width: 30%">
+    <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+</div>
+<div>
+    <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+    </h1>
+</div>
+<nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+    <div>Te encuentras en:</div>
+    <ul>
+        <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+        <li class="ulpgcds-breadcrumb__item">ULPGC · Matrícula</li>
+    </ul>
+</nav>
+
+<div class="row ml-5">
+    <H2 class="title-xl color-orange">Datos personales</H2>
+</div>
+
+    <form class="ml-5 ulpgcds-form" method="post">
+        <h4 class="title-m color-orange">1. Identificación</h4>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Nombre</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+      {#  <div class="ulpgcds-form__item">
+            <label for="text-input-id-2">Apellidos</label>
+            <input id="text-input-id-2" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-3">DNI</label>
+            <input id="text-input-id-3" name="text-input" required="required" type="text"/>
+            <div id="helptext-1" class="help-text">Introduzca su DNI sin letra</div>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Nacionalidad</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">España</option>
+                <option value="2">Estados Unidos</option>
+                <option value="3">Francia</option>
+                <option value="4">Italia</option>
+                <option value="5">Marruecos</option>
+                <option value="6">Reino Unido</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="fieldset1">Sexo</label>
+            <fieldset id="fieldset1" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option3" name="radio" type="radio" /> <label for="option3">Masculino</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option4" name="radio" type="radio" /><label for="option4">Femenino</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Teléfono Fijo (Opcional)</label>
+            <input id="text-input-id-1" name="text-input" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Teléfono Móvil</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Correo electrónico</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="email"/>
+        </div>
+
+        <hr class="divider-2"></hr>
+        <h4 class="title-m color-orange">2. Datos de nacimiento</h4>
+
+        <div class="ulpgcds-form__item">
+            <label for="fecha-datepicker-2">Fecha de nacimiento</label>
+            <input autocomplete="off" class="ulpgcds-datepicker ulpgcds-form__item--icon" id="fecha-datepicker-2" name="fecha" type="text" value="" placeholder="dd/mm/aaaa" />
+            <span class="ulpgcds-icon-calendar"></span>
+        </div>
+
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">País</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">España</option>
+                <option value="2">Estados Unidos</option>
+                <option value="3">Francia</option>
+                <option value="4">Italia</option>
+                <option value="5">Marruecos</option>
+                <option value="6">Reino Unido</option>
+            </select>
+        </div>
+
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Provincia</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">Andalucía</option>
+                <option value="2">Cataluña</option>
+                <option value="5">Extremadura</option>
+                <option value="3">Las Palmas</option>
+                <option value="4">Madrid</option>
+                <option value="6">Santa Cruz de Tenerife</option>
+            </select>
+        </div>
+
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Municipio</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="6">Mogán</option>
+                <option value="4">Telde</option>
+                <option value="1">Teror</option>
+                <option value="2">Valleseco</option>
+                <option value="3">Valsequillo</option>
+                <option value="5">Vecindario</option>
+            </select>
+        </div>
+
+        <hr class="divider-2"></hr>
+        <h4 class="title-m color-orange">3. Domicilio familiar</h4>
+
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Dirección</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Número</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Bloque/Escalera/Piso/Portal</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Código Postal</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">País</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">España</option>
+                <option value="2">Estados Unidos</option>
+                <option value="3">Francia</option>
+                <option value="4">Italia</option>
+                <option value="5">Marruecos</option>
+                <option value="6">Reino Unido</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Provincia</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">Andalucía</option>
+                <option value="2">Cataluña</option>
+                <option value="5">Extremadura</option>
+                <option value="3">Las Palmas</option>
+                <option value="4">Madrid</option>
+                <option value="6">Santa Cruz de Tenerife</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Localidad/Barrio</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+
+        <hr class="divider-2"></hr>
+        <h4 class="title-m color-orange">4. Domicilio durante el curso (sólo si es diferente del anterior)</h4>
+
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Dirección</label>
+            <input id="text-input-id-1" name="text-input" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Número</label>
+            <input id="text-input-id-1" name="text-input" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Bloque/Escalera/Piso/Portal</label>
+            <input id="text-input-id-1" name="text-input" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Código Postal</label>
+            <input id="text-input-id-1" name="text-input" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">País</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">España</option>
+                <option value="2">Estados Unidos</option>
+                <option value="3">Francia</option>
+                <option value="4">Italia</option>
+                <option value="5">Marruecos</option>
+                <option value="6">Reino Unido</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Provincia</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">Andalucía</option>
+                <option value="2">Cataluña</option>
+                <option value="5">Extremadura</option>
+                <option value="3">Las Palmas</option>
+                <option value="4">Madrid</option>
+                <option value="6">Santa Cruz de Tenerife</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Localidad/Barrio</label>
+            <input id="text-input-id-1" name="text-input" type="text"/>
+        </div>#}
+
+        <input class="ulpgcds-btn ulpgcds-btn--primary"
+               onclick="redirigir()"
+               type="submit" value="Continuar"/>
+{#        <a href="matricula2" class="ulpgcds-btn ulpgcds-btn--primary">Continuar</a>#}
+    </form>
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Matrícula
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function redirigir() {
+            $.ajax({
+                method: 'POST',
+                url: '',
+                success: function (/*data*/) {
+                    window.location.replace("/matricula2");
+                },
+                error: function () {
+                    bootbox.alert("Hubo un error al borrar el usuario. Por favor, inténtalo de nuevo más tarde.")
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
+{% endblock %}

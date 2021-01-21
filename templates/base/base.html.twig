@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <title>{% block title %}{% endblock %}</title>
         {#<link rel="stylesheet" type="text/css" href="/css/estilos.css">
         <link rel="stylesheet" type="text/css" href="/css/lista_asignatura.css">#}
@@ -11,11 +12,10 @@
             {#            <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/estilos.css') }}"/>#}
                         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/misEstilos.css') }}"/>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <link rel="stylesheet" media="all" href="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.css" />
             <link rel="stylesheet" type="text/css"  href="https://cdn.ulpgc.es/ulpgcds/1.0/css/ulpgcds.css" media="all" />
             <link rel="stylesheet" href="https://designsystem.ulpgc.es/code/tablesaw/tablesaw.css">
         {% endblock %}
-
-
     </head>
     <body>
         {% block body %}{% endblock %}

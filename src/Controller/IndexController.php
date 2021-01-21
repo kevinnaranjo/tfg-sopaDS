@@ -84,4 +84,42 @@ class IndexController extends AbstractController
             "examenes" => $dataAccess->getExamenesPrueba()
         ]);
     }
+
+    /**
+     * @Route("/form", name="form")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function formPage(HomeDataAccess $dataAccess)
+    {
+        return $this->render('primerForm.html.twig');
+    }
+
+    /**
+     * @Route("/matricula", name="matricula")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function matricula(HomeDataAccess $dataAccess)
+    {
+        return $this->render('matricula/matriculaPaso1.html.twig');
+    }
+
+    /**
+     * @Route("/matricula2", name="matricula2")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function matricula2(HomeDataAccess $dataAccess)
+    {
+        return $this->render('matricula/matriculaPaso2.html.twig');
+    }
+
+    /**
+     * @Route("/matricula3", name="matricula3")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function matricula3(HomeDataAccess $dataAccess)
+    {
+        return $this->render('matricula/matriculaPaso3.html.twig');
+    }
+
+
 }

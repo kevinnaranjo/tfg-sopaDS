@@ -1,0 +1,323 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+    </div>
+    <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+        <div>Te encuentras en:</div>
+        <ul>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula">ULPGC · Matrícula</a></li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Datos familiares y laborales</li>
+        </ul>
+    </nav>
+
+    <div class="row ml-5">
+        <H2 class="title-xl color-orange">Datos familiares y laborales</H2>
+    </div>
+
+    <form action="" class="ml-5 ulpgcds-form" method="post" onsubmit="redirigir()">
+        <h4 class="title-m color-orange">1. Padre (se deberá rellenar esta información aunque el padre haya fallecido)</h4>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Estudios</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">Analfabetos</option>
+                <option value="2">Sin estudios</option>
+                <option value="3">Primer Grado</option>
+                <option value="4">ESO, EGB, Bachillerato Elemental/ Bachillerato Superior/ FP Grado Medio/ FP Grado Superior</option>
+                <option value="5">Diplomatura universitaria/ Licenciatura/ Doctorado</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Ocupación</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="3">111 - Camareros</option>
+                <option value="2">865 - Conductores de camiones</option>
+                <option value="1">A00 - Inactivo y desocupado</option>
+                <option value="4">123 - Ingenieros cualificados</option>
+                <option value="6">55 - Técnicos de grado medio</option>
+                <option value="5">56 - Técnicos de grado superior</option>
+            </select>
+        </div>
+
+
+        <hr class="divider-2"></hr>
+        <h4 class="title-m color-orange">2. Madre (se deberá rellenar esta información aunque la madre haya fallecido</h4>
+
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Estudios</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">Analfabetos</option>
+                <option value="2">Sin estudios</option>
+                <option value="3">Primer Grado</option>
+                <option value="4">ESO, EGB, Bachillerato Elemental/ Bachillerato Superior/ FP Grado Medio/ FP Grado Superior</option>
+                <option value="5">Diplomatura universitaria/ Licenciatura/ Doctorado</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Ocupación</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="3">111 - Camareros</option>
+                <option value="2">865 - Conductores de camiones</option>
+                <option value="1">A00 - Inactivo y desocupado</option>
+                <option value="4">123 - Ingenieros cualificados</option>
+                <option value="6">55 - Técnicos de grado medio</option>
+                <option value="5">56 - Técnicos de grado superior</option>
+            </select>
+        </div>
+
+        <hr class="divider-2"></hr>
+        <h4 class="title-m color-orange">3. Estudiante</h4>
+        <h6 class="title-xs color-orange">3.1 Datos del último curso de secundaria</h6>
+        <div class="ulpgcds-form__item">
+            <label for="fieldset1">Centro</label>
+            <fieldset id="fieldset1" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option1" name="radio" type="radio" /> <label for="option1">Público</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option2" name="radio" type="radio" /><label for="option2">Privado</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option3" name="radio" type="radio" /> <label for="option3">Concertado</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">País</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">España</option>
+                <option value="2">Estados Unidos</option>
+                <option value="3">Francia</option>
+                <option value="4">Italia</option>
+                <option value="5">Marruecos</option>
+                <option value="6">Reino Unido</option>
+            </select>
+        </div>
+
+        <h6 class="title-xs color-orange mt-5">3.2 Situación profesional del estudiante</h6>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Nivel de estudios terminados</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="1">Doctorado</option>
+                <option value="2">Estudios universitarios de ciclo corto</option>
+                <option value="3">Estudios universitarios de ciclo largo</option>
+                <option value="4">Estudios superiores no universitarios</option>
+                <option value="5">Tres años de carrera universitario o al menos 180 créditos aprobados de una carrera de ciclo largo</option>
+                <option value="6">No posee ningún título de enseñanza superior</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Ocupación</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="3">111 - Camareros</option>
+                <option value="2">865 - Conductores de camiones</option>
+                <option value="1">A00 - Inactivo y desocupado</option>
+                <option value="4">123 - Ingenieros cualificados</option>
+                <option value="6">55 - Técnicos de grado medio</option>
+                <option value="5">56 - Técnicos de grado superior</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="fieldset2">Horas de trabajo semanales</label>
+            <fieldset id="fieldset2" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option4" name="radio" type="radio" /> <label for="option4">15 horas o más</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option5" name="radio" type="radio" /><label for="option5">Menos de 15 horas</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option6" name="radio" type="radio" /> <label for="option6">No trabaja</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Año de comienzo de Estudios Universitarios</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="3">2015</option>
+                <option value="2">2016</option>
+                <option value="1">2017</option>
+                <option value="4">2018</option>
+                <option value="6">2019</option>
+                <option value="5">2020</option>
+            </select>
+        </div>
+
+        <h6 class="title-xs color-orange mt-5">3.3 Situación familiar del estudiante</h6>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-numeric">
+            <label for="number-input">Nºhermanos (<small>Excluido el estudiante</small>)</label>
+            <input id="number-input" max="50" min="0" step="1" type="number" value="0" />
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-numeric">
+            <label for="number-input2">Nºhijos</label>
+            <input id="number-input2" max="50" min="0" step="1" type="number" value="0" />
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="fieldset3">Grado de Minusvalía que posee</label>
+            <fieldset id="fieldset3" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option11" name="radio" type="radio" /> <label for="option11">Sin minusvalía</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option12" name="radio" type="radio" /><label for="option12">>=33%</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option13" name="radio" type="radio" /> <label for="option13">>=65%</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option14" name="radio" type="radio" /> <label for="option14">>=80%</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <h6 class="title-xs color-blue mt-5">3.3.1 Familia Numerosa (Si procede)</h6>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1"><button class="ulpgcds-tooltip"
+                                                 data-simpletooltip-text="Comunidad autónoma en que fue expedido el carnet de familia numerosa"
+                                                 role="tooltip">Carné
+                    <span class="ulpgcds-icon ulpgcds-icon-alert ulpgcds-icon--right"></span></button></label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+            <label for="dropdown">Comunidad autónoma</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" >Escoja una opción</option>
+                <option value="2">Andalucía</option>
+                <option value="1">Aragón</option>
+                <option value="3">Canarias</option>
+                <option value="4">Cantabria</option>
+                <option value="6">Castilla y León</option>
+                <option value="5">Castila-La Mancha</option>
+            </select>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="fieldset3">Tipo</label>
+            <fieldset id="fieldset3" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option7" name="radio" type="radio" /> <label for="option7">2 Hijos</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option8" name="radio" type="radio" /><label for="option8">3 Hijos</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option9" name="radio" type="radio" /> <label for="option9">4 Hijos</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option10" name="radio" type="radio" /> <label for="option10">Otros</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <h6 class="title-xs color-blue mt-5">3.3.2 Tarjeta de Asistencia Sanitaria (Si procede)</h6>
+        <div class="ulpgcds-form__item">
+            <label for="text-input-id-1">Número</label>
+            <input id="text-input-id-1" name="text-input" required="required" type="text"/>
+        </div>
+        <div class="ulpgcds-form__item">
+            <label for="fieldset4">Organismo/Procedencia</label>
+            <fieldset id="fieldset4" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option15" name="radio" type="radio" /> <label for="option15">Seguridad Social</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option16" name="radio" type="radio" /><label for="option16">MUFACE</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option17" name="radio" type="radio" /> <label for="option17">ISFAS</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option18" name="radio" type="radio" /> <label for="option18">Extranjero</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="ulpgcds-form__item">
+            <input id="c1" name="text-input" required="required" type="checkbox"/>
+            <label for="c1">Te Autorizo a la ULPGC a que me envíe correos electrónicos con información universitaria a la cuenta especificada en el impreso de matrícula</label>
+        </div>
+        <div class="ulpgcds-form__item">
+            <input id="c2" name="text-input" required="required" type="checkbox"/>
+            <label for="c2">Autorizo a la ULPGC a que me envíe mensajes SMS con información universitaria al número de teléfono móvil especificado en mis datos personales</label>
+        </div>
+        <div class="ulpgcds-form__item">
+            <input id="c3" name="text-input" required="required" type="checkbox"/>
+            <label for="c3">Prefiero recibir las notificaciones por medios telemáticos o Portal de Acceso de la ULPGC (MiULPGC)</label>
+        </div>
+        <div class="ulpgcds-form__item">
+            <input id="c4" name="text-input" required="required" type="checkbox"/>
+            <label for="c4">Acepto y Conozco las Normas de Progreso y Permanencia de la ULPGC <a target="_blank" href="https://csocial.ulpgc.es/wp-content/uploads/2019/03/CS_normativa_titulaciones_2019_2.pdf"> (Pulse aquí para acceder a la normativa, se abre una nueva pantalla)</a></label>
+        </div>
+
+        <input class="ulpgcds-btn ulpgcds-btn--primary" onclick="redirigir()" type="submit" value="Continuar"/>
+    </form>
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Matrícula
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function redirigir() {
+            $.ajax({
+                method: 'POST',
+                url: '',
+                success: function (/*data*/) {
+                    window.location.replace("/matricula3");
+                },
+                error: function () {
+                    bootbox.alert("Hubo un error al borrar el usuario. Por favor, inténtalo de nuevo más tarde.")
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
+{% endblock %}
