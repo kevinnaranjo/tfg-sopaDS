@@ -1,1 +1,271 @@
-Hwllo world!
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+    </div>
+    <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+        <div>Te encuentras en:</div>
+        <ul>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula">ULPGC · Matrícula</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula2">ULPGC · Datos familiares y laborales</a></li>
+            {#            <li class="ulpgcds-breadcrumb__item">ULPGC · Familia Numerosa</li>#}
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Dedicación</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Asignaturas</li>
+        </ul>
+    </nav>
+
+    <div class="ulpgcds-grid">
+        <div class="row">
+            <p class="Body">El estudiante de nuevo ingreso en el Grado de Lenguas Modernas debe elegir segunda lengua en el primer curso de la titulación, entre el idioma
+            francés y el idioma chino. De las cien plazas ofertadas en el primer curso, 75 corresponden al idioma francés y 15 al idioma chino; las plazas serán
+            adjudicadas por orden de matrícula.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <p><a href="#">Pinche aquí si desea acceder a la tasa de éxito de las asignaturas</a></p>
+        </div>
+        <hr>
+        <div class="row">
+            <p class="Body w-100">Aun no ha superado ningún crédito de Asignaturas Optativas</p>
+            <p class="Body w-100">Le quedan 18 créditos de Asignaturas Optativas por superar</p>
+        </div>
+        <hr>
+        <div class="row">
+            <p class="Body color-blue font-weight-bold">De acuerdo a la Normatuva de Progreso y Permanencia debe matricularse al menos de 60 créditos y como máximo de 60 créditos.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <fieldset class='ulpgcds-form__item'>
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input id="option1" name="checkbox" type="checkbox" />
+                    <label for="option1">
+                        Solicita reconocimiento de créditos (solo para estudnates que proceden de otra titulación universitaria o de Ciclos Formativos de Grado Superior).
+                        Antes de seguir comprueba su propuesta de reconocimientos automáticos en:
+                    </label>
+                </div>
+            </fieldset>
+            <p class="w-100"><a href="#">SIMULACIÓN DE RECONOCIMIENTOS DE PROCEDENCIA UNIVERSITARIO</a></p>
+            <p class="w-100"><a href="#">SIMULACIÓN DE RECONOCIMIENTOS DE PROCEDENCIA CICLOS FORMATIVOS</a></p>
+            <p class="Body w-100 font-weight-bold">Si solicita reconocimiento podrá matricularse de todas las asignaturas que desee, tanto para cursar como para solicitar el reconocimiento.
+                No obstante, cuando formalice definitivamente la matrícula (resueltos los reconocimientos) no podrá superar 60 créditos (descontando los reconocidos)</p>
+            <p class="Body w-100">El reconocimiento de las asignaturas solicitadas está en trámite, por tanto, para cualquier modificación deberá presentarse en la Administración de
+            su edificio.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <table class="tablesaw-columntoggle" data-tablesaw-mode="columntoggle">
+                <caption>Primer curso</caption>
+                <thead>
+                <tr>
+                    <th data-tablesaw-priority="persist"></th>
+                    <th data-tablesaw-priority="1"></th>
+                    <th data-tablesaw-priority="2"></th>
+                    <th data-tablesaw-priority="3"></th>
+                    <th data-tablesaw-priority="4"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila1" name="checkbox" type="checkbox" /> <label for="fila1"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40054&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.-44003-SEGUNDA LENGUA I (FRANCÉS)</a></td>
+                    <td>2º semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila2" name="checkbox" type="checkbox" /> <label for="fila2"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40047&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.-44008-SEGUNDA LENGUA II (FRANCÉS)</a></td>
+                    <td>1er. semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila3" name="checkbox" type="checkbox" /> <label for="fila3"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40051&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44000-HISTORIA CULTURAL DE GRAN BRETAÑA</a></td>
+                    <td>2º semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila4" name="checkbox" type="checkbox" /> <label for="fila4"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40056&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44001-ESTRATEGIAS PARA EL APRENDIZAJE DE LAS LENGUAS MODERNAS</a></td>
+                    <td>1er. semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila5" name="checkbox" type="checkbox" /> <label for="fila5"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40049&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44002-INGLÉS I</a></td>
+                    <td>1er. semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila6" name="checkbox" type="checkbox" /> <label for="fila6"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40048&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44004-MITOLOGÍA CLÁSICA Y CULTURA EUROPEA</a></td>
+                    <td>1er. semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila7" name="checkbox" type="checkbox" /> <label for="fila7"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40052&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44005-LA TRADICIÓN LITERARIA CLÁSICA Y CULTURA POPULAR</a></td>
+                    <td>1er. semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila8" name="checkbox" type="checkbox" /> <label for="fila8"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40053&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44006-ESPAÑOL ESTÁNDAR: TÉCNICAS DE EXPRESIÓN Y COMPRENSIÓN</a></td>
+                    <td>2º semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila9" name="checkbox" type="checkbox" /> <label for="fila9"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40050&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44007-INGLÉS II</a></td>
+                    <td>2º semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset class='ulpgcds-form__item align-middle m-auto'>
+                            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox m-auto" style="margin-top: -1.5vh !important;">
+                                <input id="fila10" name="checkbox" type="checkbox" /> <label for="fila10"></label>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td>Básica de rama</td>
+                    <td><a href="https://www2.ulpgc.es/index.php?pagina=plan_estudio&amp;ver=pantalla&amp;numPantalla=99&amp;nCodAsignatura=40055&amp;codTitulacion=4000&amp;codPlan=41&amp;tipotitulacion=G&amp;codEspecialidad=">6 Cr.[Común] 44009-NARRATIVA AUDIOVISUAL: CINE Y TELEVISIÓN</a></td>
+                    <td>2º semestre</td>
+                    <td>60,96€</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <form class="ml-5 mt-3 ulpgcds-form" method="post" onsubmit="redirigir()">
+        <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Seguir"/>
+    </form>
+
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Matrícula
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function redirigir() {
+            $.ajax({
+                method: 'POST',
+                url: '',
+                success: function (/*data*/) {
+                    window.location.replace("/matricula6");
+                },
+                error: function () {
+                    bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página.");
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
+{% endblock %}
