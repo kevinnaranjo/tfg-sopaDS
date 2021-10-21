@@ -184,43 +184,6 @@
             </fieldset>
         </div>
 
-        <h6 class="title-xs color-blue mt-5">3.3.1 Familia Numerosa (Si procede)</h6>
-        <div class="ulpgcds-form__item">
-            <label for="text-input-id-1"><button class="ulpgcds-tooltip"
-                                                 data-simpletooltip-text="Comunidad autónoma en que fue expedido el carnet de familia numerosa"
-                                                 role="tooltip">Carné
-                    <span class="ulpgcds-icon ulpgcds-icon-alert ulpgcds-icon--right"></span></button></label>
-            <input id="text-input-id-1" name="text-input" type="text"/>
-        </div>
-        <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-            <label for="dropdown">Comunidad autónoma</label>
-            <select id="dropdown" name="dropdown">
-                <option value="" >Escoja una opción</option>
-                <option value="2">Andalucía</option>
-                <option value="1">Aragón</option>
-                <option value="3">Canarias</option>
-                <option value="4">Cantabria</option>
-                <option value="6">Castilla y León</option>
-                <option value="5">Castila-La Mancha</option>
-            </select>
-        </div>
-        <div class="ulpgcds-form__item">
-            <label for="fsTipo">Tipo</label>
-            <fieldset id="fsTipo" class="ulpgcds-form__item ulpgcds-form__item--inline">
-                <div class="ulpgcds-form__item__radio">
-                    <input id="fsTipo1" name="fsTipo" type="radio" /> <label for="fsTipo1">2 Hijos</label>
-                </div>
-                <div class="ulpgcds-form__item__radio">
-                    <input id="fsTipo2" name="fsTipo" type="radio" /><label for="fsTipo2">3 Hijos</label>
-                </div>
-                <div class="ulpgcds-form__item__radio">
-                    <input checked="checked" id="fsTipo3" name="fsTipo" type="radio" /> <label for="fsTipo3">4 Hijos</label>
-                </div>
-                <div class="ulpgcds-form__item__radio">
-                    <input checked="checked" id="fsTipo4" name="fsTipo" type="radio" /> <label for="fsTipo4">Otros</label>
-                </div>
-            </fieldset>
-        </div>
 
         <h6 class="title-xs color-blue mt-5">3.3.2 Tarjeta de Asistencia Sanitaria (Si procede)</h6>
         <div class="ulpgcds-form__item">
@@ -258,8 +221,20 @@
             <label for="c3">Prefiero recibir las notificaciones por medios telemáticos o Portal de Acceso de la ULPGC (MiULPGC)</label>
         </div>
         <div class="ulpgcds-form__item">
-            <input id="c4" name="text-input" required="required" type="checkbox"/>
+            <input id="c4" name="text-input" {#required="required"#} type="checkbox"/>
             <label for="c4">Acepto y Conozco las Normas de Progreso y Permanencia de la ULPGC <a target="_blank" href="https://csocial.ulpgc.es/wp-content/uploads/2019/03/CS_normativa_titulaciones_2019_2.pdf"> (Pulse aquí para acceder a la normativa, se abre una nueva pantalla)</a></label>
+        </div>
+
+        <h6 class="title-xs color-blue mt-5">¿Es Familia Numerosa?</h6>
+        <div class="ulpgcds-form__item">
+            <fieldset class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <div class="ulpgcds-form__item__radio">
+                    <input id="fnum1" name="fanum" type="radio" value="Sí"/> <label for="fnum1">Sí</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="fnum2" name="fanum" type="radio" value="No" checked/><label for="fnum2">No</label>
+                </div>
+            </fieldset>
         </div>
 
         <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Continuar"/>
@@ -294,16 +269,29 @@
 {% block js %}
     <script type="text/javascript">
         function redirigir() {
-            $.ajax({
-                method: 'POST',
-                url: '',
-                success: function (/*data*/) {
-                    window.location.replace("/matricula3");
-                },
-                error: function () {
-                    bootbox.alert("Hubo un error al borrar el usuario. Por favor, inténtalo de nuevo más tarde.")
-                }
-            });
+            if ($('input:radio[name="fanum"]:checked').val() == "Sí") {
+                $.ajax({
+                    method: 'POST',
+                    url: '',
+                    success: function (/*data*/) {
+                        window.location.replace("/matricula3");
+                    },
+                    error: function () {
+                        bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página");
+                    }
+                });
+            } else {
+                $.ajax({
+                    method: 'POST',
+                    url: '',
+                    success: function (/*data*/) {
+                        window.location.replace("/matricula4");
+                    },
+                    error: function () {
+                        bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página");
+                    }
+                });
+            }
         }
     </script>
     <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">

@@ -14,63 +14,32 @@
             <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
             <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula">ULPGC · Matrícula</a></li>
             <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula2">ULPGC · Datos familiares y laborales</a></li>
-            <li class="ulpgcds-breadcrumb__item">ULPGC · Familia Numerosa</li>
+{#            <li class="ulpgcds-breadcrumb__item">ULPGC · Familia Numerosa</li>#}
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Dedicación</li>
         </ul>
     </nav>
 
- <form class="ml-5 ulpgcds-form" method="post" onsubmit="redirigir()">
-     <h6 class="title-xs color-blue mt-5">3.3.1 Familia Numerosa</h6>
+    <div style="margin: auto" class="ml-5">
+        <h6 class="title-xs color-blue mt-5">Ha elegido el grado 4010-Grado en Lenguas Modernas
+        <br/>
+            Centro: Facultad de Filología
+        </h6>
+    </div>
 
-     <div class="ulpgcds-form__item">
-         <fieldset id="padreFnum" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Tipo de Familia Numerosa:</legend>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fnume1" name="fnume" type="radio" value="General"/> <label for="fnume1">General</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fnume2" name="fnume" type="radio" value="Especial" checked/><label for="fnume2">Especial</label>
-             </div>
-         </fieldset>
-     </div>
+    <hr/>
 
-     <div class="ulpgcds-form__item">
-         <label for="text-input-id-1">Carné</label>
-         <input id="text-input-id-1" name="text-input" type="text"/>
-     </div>
-     <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-         <label for="dropdown"><button class="ulpgcds-tooltip"
-                                              data-simpletooltip-text="Comunidad autónoma en que fue expedido el carnet de familia numerosa"
-                                              role="tooltip">Comunidad Autónoma
-                 <span class="ulpgcds-icon ulpgcds-icon-alert ulpgcds-icon--right"></span></button></label>
-         <select id="dropdown" name="dropdown">
-             <option value="" >Escoja una opción</option>
-             <option value="2">Andalucía</option>
-             <option value="1">Aragón</option>
-             <option value="3">Canarias</option>
-             <option value="4">Cantabria</option>
-             <option value="6">Castilla y León</option>
-             <option value="5">Castila-La Mancha</option>
-         </select>
-     </div>
+    <div class="mx-auto text-center">
+        <p class="Body color-blue">Su dedicación actual en esta titulación es COMPLETA</p>
+        <p class="Body color-blue">De acuerdo a la Normativa de Progreso y Permanencia debe matricularse en al menos 60 créditos y como máximo de 60 créditos</p>
+    </div>
 
-     <div class="ulpgcds-form__item">
-         <fieldset id="fsTipo" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Tipo:</legend>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fsTipo1" name="fsTipo" type="radio" /> <label for="fsTipo1">2 Hijos</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fsTipo2" name="fsTipo" type="radio" /><label for="fsTipo2">3 Hijos</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input checked="checked" id="fsTipo3" name="fsTipo" type="radio" /> <label for="fsTipo3">4 Hijos</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input checked="checked" id="fsTipo4" name="fsTipo" type="radio" /> <label for="fsTipo4">Otros</label>
-             </div>
-         </fieldset>
-     </div>
-
-     <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Confirmar Datos"/>
- </form>
+    <form class="ml-5 mt-3 ulpgcds-form" method="post" onsubmit="redirigir()">
+        <div class="ulpgcds-form__item d-flex flex-row justify-content-start align-items-center">
+            <label for="btnCambio">Pulse el siguiente botón para solicitar el cambio de dedicación: </label>
+            <button class="ulpgcds-btn ulpgcds-btn--secondary ulpgcds-btn--small ml-3">Cambio dedic.</button>
+        </div>
+        <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Seguir"/>
+    </form>
 
     <footer>
         <div class="ulpgcds-footer">
@@ -106,7 +75,7 @@
                 method: 'POST',
                 url: '',
                 success: function (/*data*/) {
-                    window.location.replace("/matricula4");
+                    window.location.replace("/matricula5");
                 },
                 error: function () {
                     bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página.");
