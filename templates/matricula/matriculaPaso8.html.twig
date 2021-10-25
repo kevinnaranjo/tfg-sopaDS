@@ -1,0 +1,331 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+    </div>
+    <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+        <div>Te encuentras en:</div>
+        <ul>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula">ULPGC · Matrícula</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula2">ULPGC · Datos familiares y laborales</a></li>
+            {#            <li class="ulpgcds-breadcrumb__item">ULPGC · Familia Numerosa</li>#}
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Dedicación</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Asignaturas</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Seguro</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Liquidación</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Resumen</li>
+        </ul>
+    </nav>
+
+    <div class="ulpgcds-grid">
+        <div class="row">
+            <p class="body text-justify">La estudiante Almudena Pérez Pérez con NIF/Pasaporte 11111111H ha solicitado matrícula en el curso académica <strong>2021/22</strong> en el turno de
+            <strong>Mañana</strong> en el Centro <strong>Facultad de Filología</strong> en la Titulación <strong>4010 - Grado en Lenguas Modernas</strong> y especialidad
+            <strong>10 - INGLÉS-FRANCÉS</strong></p>
+        </div>
+        <hr>
+        <div class="row">
+            <table class="tablesaw-columntoggle" data-tablesaw-mode="columntoggle">
+                <thead>
+                <tr>
+                    <th data-tablesaw-priority="persist">Asignatura</th>
+                    <th data-tablesaw-priority="1">Tipo</th>
+                    <th data-tablesaw-priority="2">Curso</th>
+                    <th data-tablesaw-priority="3">Créditos</th>
+                    <th data-tablesaw-priority="4">Conv. Esp.</th>
+                    <th data-tablesaw-priority="5">Nº Matr.</th>
+                    <th data-tablesaw-priority="6">Importe</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>6 Cr.-44003-SEGUNDA LENGUA I (FRANCÉS) (Semes. 2º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.-44008-SEGUNDA LENGUA II (FRANCÉS) (Semes. 1º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44000-HISTORIA CULTURAL DE GRAN BRETAÑA (Semes. 2º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44001-ESTRATEGIAS PARA EL APRENDIZAJE DE LAS LENGUAS MODERNAS (Semes. 1º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44002-INGLÉS I (Semes. 1º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44004-MITOLOGÍA CLÁSICA Y CULTURA EUROPEA (Semes. 1º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44005-LA TRADICIÓN LITERARIA CLÁSICA Y CULTURA POPULAR (Semes. 1º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44006-ESPAÑOL ESTÁNDAR: TÉCNICAS DE EXPRESIÓN Y COMPRENSIÓN (Semes. 2º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44007-INGLÉS II (Semes. 2º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                <tr>
+                    <td>6 Cr.[Común] 44009-NARRATIVA AUDIOVISUAL: CINE Y TELEVISIÓN (Semes. 2º)</td>
+                    <td>Básica de rama</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>1</td>
+                    <td>60,96€</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="row mx-auto">
+            <h3 class="title-l mx-auto">DETALLE DE PRECIOS PUBLICOS</h3>
+        </div>
+
+        <div class="row">
+            <table class="tablesaw-columntoggle w-25" data-tablesaw-mode="columntoggle">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seguro Escolar:</td>
+                        <td>1,12 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Seguro Voluntario:</td>
+                        <td>0,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Apertura Expediente(sin dto.):</td>
+                        <td>36,08 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Emisión del Carné(sin dto.):</td>
+                        <td>5,94 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Documentación:</td>
+                        <td>3,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Asignaturas (sin dto./recargo):</td>
+                        <td>609,60 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Asignaturas (tras dto./recargo):</td>
+                        <td>0,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Incremento Matrícula:</td>
+                        <td>0,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Extensiones</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Por Beca:</td>
+                        <td>0,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Por créditos con M.H.:</td>
+                        <td>0,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Por Familia Numerosa:</td>
+                        <td>325,81 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Por Pago Único:</td>
+                        <td>0,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Previo por Conv. Especial:</td>
+                        <td>0,00 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Otras:</td>
+                        <td>304,80 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Suma Pagos:</td>
+                        <td>655,74 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>Suma Extenciones:</td>
+                        <td>630,61 €</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Importe a Pagar:</strong></td>
+                        <td><strong>25,13 €</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+
+        <div class="row">
+            <p class="body text-justify"><strong>Según el artículo de la Ley 39/2015 de 1 de octubre de Procedimiento Administrativo Común (BOE del 2 de octubre), se entiende otorgado el consentimiento
+                para las siguientes consultas de datos: Identidad y Familia numerosa. Si NO otorga su consentimiento a la Universidad de Las Palmas de Gran Canaria para la consulta de sus datos a través
+                de los Servicios de Verificación y Consulta de Datos del Ministerio de Hacienda y Función Pública, desmarque las siguientes casillas:</strong></p>
+
+            <fieldset class='ulpgcds-form__item'>
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input checked="checked" id="option1" name="checkbox" type="checkbox" /> <label for="option1"><strong>Autorizo a consultar los datos de la familia numerosa</strong></label>
+                </div>
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input checked="checked" id="option2" name="checkbox" type="checkbox" /><label for="option2"><strong>Autorizo a consultar los datos del Registro de Delitos de Naturaleza Sexual</strong></label>
+                </div>
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input checked="checked" id="option3" name="checkbox" type="checkbox" /><label for="option3"><strong>Autorizo a consultar los datos de mi DNI/NIE</strong></label>
+                </div>
+            </fieldset>
+
+            <p class="body text-justify"><strong>en este caso, deberá aportar la documentación requerida en el periodo establecido para cada procedimiento junto con la motivación que origina la
+                denegación de la autorización de acceso a estos datos</strong></p>
+        </div>
+        <hr>
+    </div>
+
+    <form class="ml-5 mt-3 ulpgcds-form" method="post" onsubmit="redirigir()">
+        <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Continuar"/>
+    </form>
+
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Matrícula
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function redirigir() {
+            $.ajax({
+                method: 'POST',
+                url: '',
+                success: function (/*data*/) {
+                    window.location.replace("/matricula9");
+                },
+                error: function () {
+                    bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página.");
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
+{% endblock %}
