@@ -1,0 +1,204 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+    </div>
+    <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+        <div>Te encuentras en:</div>
+        <ul>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula">ULPGC · Matrícula</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula2">ULPGC · Datos familiares y laborales</a></li>
+            {#            <li class="ulpgcds-breadcrumb__item">ULPGC · Familia Numerosa</li>#}
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Dedicación</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Asignaturas</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Seguro</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Liquidación</li>
+        </ul>
+    </nav>
+
+    <div class="ulpgcds-grid">
+        <div class="row mx-auto">
+            <h4 class="title-m mx-auto">DATOS PARA LA LIQUIDACIÓN DE LA MATRÍCULA</h4>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify"><strong>A continuación se te presentan una serie de opciones que deberás chequear si es tu caso, debiendo realizar las acciones que se te indiquen con la misma,
+                como es la presentación de alguna documentación y la fecha límite de entrega. También se pregunta acerca de la forma de pago, preferencia de turno...</strong></p>
+            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                <input id="option1" name="checkbox" type="checkbox" /> <label for="option1">Debe pagar seguro escolar obligatorio</label>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <fieldset class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>¿PAGA A PLAZOS?:</legend>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option2" name="radio" type="radio" /> <label for="option2">Pago Único</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option3" name="radio" type="radio" /><label for="option3">Pago fraccionado</label>
+                </div>
+            </fieldset>
+            <p class="body text-justify"><strong>¡Cuidado!</strong><br/>
+            <strong>Si va a elegir pago a plazos, marque la opción "pago fraccionado" antes de confirmar la matrícula porque una vez confirmada, si tuviera derecho a bonificación, para cambiarlo tendría
+            que acudir a la Administración del Edificio donde se imparte la titulación.</strong><br/>
+            El pago se puede efectuar en uno o en seis plazos. El pago único supondrá una bonificación del 3% sobre las tasas académicas. En el pago fraccionado los plazos serán los siguientes:pendiente de la
+            publicación del Decreto de precios públicos 2021/22. Aquellos alumnos que lo deseen pueden domiciliar el pago de los plazos de la matrícula.</p>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+                <label for="dropdown">Forma de pago:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="" >Pago en oficinas de las entidades financieras colaboradoras</option>
+                    <option value="1">Pago en cajero de las entidades financieras colaboradoras</option>
+                    <option value="2">Pago a través de la plataforma virtual Redyss</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+               <input id="option4" name="checkbox" type="checkbox" /> <label for="option4">Es Personal o hijo de personal de la ULPGC</label>
+            </div>
+            <p class="body text-justify">En el caso de seleccionar este tipo de exención no es necesario presentar documentación justificativa ya que consta en el sistema informático</p>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                <input id="option5" name="checkbox" type="checkbox" /> <label for="option5"><strong>Solicita reconocimiento de créditos (solo para estudiantes que proceden de otra titulación
+                    universitaria o de Ciclos Formativos de Grado Superior).</strong></label>
+            </div>
+            <p class="Body text-justify"><strong>Antes de seguir compruebe su propuesta de reconocimientos automáticos en:</strong><br/>
+                <a href="#">SIMULACIÓN DE RECONOCIMIENTOS UNIVERSITARIOS</a><br/>
+                <a href="#">SIMULACIÓN DE RECONOCIMIENTOS DE PROCEDENCIA CICLO FORMATIVO</a></p><br/>
+            <strong>Si solicita reconocimiento podrá matricularse de todas las asignaturas que desee, tanto para cursar como para solicitar el reconocimiento. No obstante, cuando formalice definitivamente
+            la matrícula (resueltos los reconocimientos) no podrá superar 60 créditos (descontando los reconocidos)</strong><br>
+            El reconocimiento de las asignaturas solicitadas está en trámite, por tanto, para cualquier modificación deberá presentarse en la Administración de su edificio.
+        </div>
+        <hr>
+
+        <div class="row">
+            <p class="body text-justify">"A los estudiantes que reúnan los requisitos académicos para obtener beca M.E.C., se les recomienda que la soliciten, ya que si no lo hicieran y solicitaran
+            beca C.A.C. les sería denegada por esta causa"</p>
+            <fieldset class='ulpgcds-form__item'>
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input id="option6" name="checkbox" type="checkbox" /> <label for="option6"><strong>Solicita beca del Ministerio de Educación y Ciencia / País Vasco</strong></label>
+                    <p class="body mt-n2">Has de presentarla conjuntamente con la matrícula, o la credencial si la presentaste en el Instituto</p>
+                </div>
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input checked="checked" id="option7" name="checkbox" type="checkbox" /><label for="option7"><strong>Solicita beca de la Comunidad Autónoma Canaria</strong></label>
+                    <p class="body mt-n2">Has de presentarla conjuntamente con la matrícula.</p>
+                </div>
+            </fieldset>
+        </div>
+        <hr>
+
+        <div class="row">
+            <fieldset class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Preferencia de turno:</legend>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option8" name="radio" type="radio" /> <label for="option8">Mañana</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option9" name="radio" type="radio" /><label for="option9">Tarde</label>
+                </div>
+            </fieldset>
+            <p class="body w-100 mt-n2">Para aquellos centros que tienen en cuenta esta opción. Deberás informarte en tu centro</p>
+        </div>
+        <hr>
+
+        <div class="row">
+            <p class="body text-justify"><strong>Aportación voluntaria al Fondo de Ayuda Humanitaria y de Emergencia</strong><br/>
+            (creado por Consejo de Gobierno de la ULPGC el 1 de abril de 2005)</p>
+            <p class="body text-justify">Marcando una de las casillas abajo indicadas, me comprometo a aportar una ayuda económica adicional al pago de mi matrícula, la cual será gestionada por una comisión
+            formada por representates de los estudiantes, que informará a toda la comunidad universitaria sobre su destino en acciones de emergencia (desastres naturales, conflictos bélicos, violación
+            de derechos humanos...) y de ayuda humanitaria.</p>
+
+            <fieldset class="ulpgcds-form__item">
+                <legend>(Marque una única casilla)</legend>
+                <div class="ulpgcds-form__item__radio">
+                    <input id="option10" name="radio" type="radio" /> <label for="option10">3 euros</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option11" name="radio" type="radio" /><label for="option11">6 euros</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option12" name="radio" type="radio" /><label for="option12">9 euros</label>
+                </div>
+                <div class="ulpgcds-form__item__radio">
+                    <input checked="checked" id="option13" name="radio" type="radio" /><label for="option13">12 euros</label>
+                </div>
+            </fieldset>
+        </div>
+        <hr>
+    </div>
+
+    <form class="ml-5 mt-3 ulpgcds-form" method="post" onsubmit="redirigir()">
+        <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Continuar"/>
+    </form>
+
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Matrícula
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function redirigir() {
+            $.ajax({
+                method: 'POST',
+                url: '',
+                success: function (/*data*/) {
+                    window.location.replace("/matricula8");
+                },
+                error: function () {
+                    bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página.");
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
+{% endblock %}
