@@ -147,6 +147,15 @@ class IndexController extends AbstractController
     {
         return $this->render('matricula/matriculaPaso6.html.twig');
     }
+    /**
+     * @Route("/matricula7", name="matricula7")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function matricula7(HomeDataAccess $dataAccess)
+    {
+        return $this->render('matricula/matriculaPaso7.html.twig');
+    }
+
 
 
 }

@@ -1,1 +1,153 @@
-Hello workd
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+    </div>
+    <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+        <div>Te encuentras en:</div>
+        <ul>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula">ULPGC · Matrícula</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula2">ULPGC · Datos familiares y laborales</a></li>
+            {#            <li class="ulpgcds-breadcrumb__item">ULPGC · Familia Numerosa</li>#}
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Dedicación</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Asignaturas</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Seguro</li>
+        </ul>
+    </nav>
+
+    <div class="ulpgcds-grid">
+        <div class="row mx-auto">
+            <h4 class="title-m mx-auto">CUM LAUDE</h4>
+        </div>
+
+        <div class="row mx-auto">
+            <h5 class="title-s mx-auto">"Un seguro sobresaliente"</h5>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify">Si te preocupan los sobresalientes del curso, no podrás pasar del sobresaliente más especial que ahora tienes al alcance de tu mano: un seguro para que ningún accidente
+            ponga en peligro un año de estudios. Tu Universidad y la Compañia ACE EUROPEAN GROUP LIMITED, uno de los líderes mundiales en el sector del seguro, te lo han preparado para que por 13
+            Euros. puedas tener asegurado el curso hasta en 25.000 Euros.</p>
+        </div>
+
+        <div class="row">
+            <h5 class="title-s">¿TE IMAGINAS?...</h5>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify">... que un accidente tonto te impidiera ir a clase durante veinte días, o, aún más, que te imposibilitara presentarte a un examen. A la basura todo el esfuerzo de meses
+                de clases, de prácticas..., incluso podrías perder el curso con matrícula incluida. Una faena que tiene solución si te lo tomas en serio. En el campus o en cualquier lugar del mundo
+                <strong class="color-orange">(*)</strong>, si te "marcas" un viaje, CUM LAUDE te protege durante 24 horas al día y 365 días al año con los siguientes beneficios:</p>
+        </div>
+
+        <div class="row">
+            <h5 class="title-s">COBERTURAS POR ACCIDENTE:</h5>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify">PÉRDIDA DE CLASES durante 20 días consecutivos, como consecuencia de un accidente: hasta 2.500 euros en concepto de ayuda para clases particulares. PÉRDIDA DE MATRÍCULA: el
+            reembolso de ésta si por accidente no se puede asistir a clase durante 2 meses consecutivos o el accidente ocurre durante los 15 días anteriores a la convocatoria de un examen final, hasta un máximo
+            de 3.500 euros. ASISTENCIA SANITARIA por accidente. Ilimitado en Centros concertados hasta 365 días. En libre elección de médicos hasta 3.520 euros. INVALIDEZ PERMANENTE ABSOLUTA por accidente: una
+            indemnización de 25.000 euros. INVALIDEZ PERMANENTE PARCIAL por accidente: según baremo en base a 25.000 euros. FALLECIMIENTO por accidente: una indemnización de 20.000 euros. INFORTUNIO FAMILIAR, por
+            fallecimiento, en transporte privado y/o público, del padre o de la madre: una indemnización de 10.000 euros y 20.000 euros si fallecen ambos en el mismo accidente</p>
+        </div>
+
+        <div class="row">
+            <h5 class="title-s">...Y además, si te encuentras de viaje fuera de España, por un período menos de 90 días:</h5>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify">COBERTURAS POR ACCIDENTE Y/O ENFERMEDAD: ASISTENCIA SANITARIA por enfermedad hasta 3.520 euros. TRASLADO SANITARIO hasta tu domicilio habitual por enfermedad y/o accidente.
+            ENVIO DE UN FAMILIAR en caso de Hospitalización por enfermedad y/o accidente. GASTOS DE ESTANCIA de este familiar hasta 60 euros diarios (máximo 15 días) REPATRIACIÓN por fallecimiento por cualquier causa.
+            SERVICIO DE INFORMACIÓN de viajes. SERVICIO DE MENSAJES urgentes. ENVÍO DE MEDICAMENTOS. SUSTITUCIÓN DE PRESCRIPCIONES EXTRAVIADAS EN EL EXTRANJERO. SUSTITUCIÓN DE GAFAS O LENTES DE CONTACTO, EN CASO DE
+            ROBO O EXTRAVÍO.</p>
+            <p class="body text-justify">Hemos pensado en todo, para que no tengas ninguna excusa. <strong>Tienes todas las coberturas POR TAN SOLO 13 euros.</strong></p>
+        </div>
+
+        <div class="row">
+            <h5 class="title-s">¿CÓMO SUSCRIBIRLO?</h5>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify">Cumplimenta la pregunta formulada sobre este Seguro e ingresa el importa de la prima junto con el importe de la matrícula</p>
+        </div>
+
+        <div class="row">
+            <h5 class="title-s">¿DESEA CONTRATAR ESTE SEGURO?</h5>
+        </div>
+
+        <div class="row">
+            <form class="ulpgcds-form" method="post" onsubmit="redirigir()">
+                <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Sí"/>
+                <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="No"/>
+            </form>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify"><strong class="color-orange">(*) salvo Cuba</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Matrícula
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function redirigir() {
+            $.ajax({
+                method: 'POST',
+                url: '',
+                success: function (/*data*/) {
+                    window.location.replace("/matricula7");
+                },
+                error: function () {
+                    bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página.");
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
+{% endblock %}
