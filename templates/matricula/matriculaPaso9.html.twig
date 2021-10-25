@@ -1,1 +1,145 @@
-Hello World!
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+    <div id="logo" style="width: 30%">
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+    </div>
+    <div>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
+        </h1>
+    </div>
+    <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
+        <div>Te encuentras en:</div>
+        <ul>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula">ULPGC · Matrícula</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link" href="matricula2">ULPGC · Datos familiares y laborales</a></li>
+            {#            <li class="ulpgcds-breadcrumb__item">ULPGC · Familia Numerosa</li>#}
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Dedicación</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Asignaturas</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Seguro</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Liquidación</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Resumen</li>
+            <li class="ulpgcds-breadcrumb__item">ULPGC · Final</li>
+        </ul>
+    </nav>
+
+    <div class="ulpgcds-grid">
+        <div class="row mx-auto">
+            <h4 class="title-m mx-auto">EL PROCESO DE MATRÍCULA HA CONCLUIDO</h4>
+        </div>
+
+        <div class="row mx-auto">
+            <h5 class="title-s mx-auto text-center">Importante: para que su matrícula tenga carácter definitivo, debe abonar al menos el primer plazo de matrícula y las tasas administrativas antes del 26 de agosto
+            de 2021, de no hacerlo así se le designará la plaza de matrícula</h5>
+        </div>
+
+        <div class="row">
+            <p class="body text-justify"><strong>A continuación se te presenta información adicional muy importante...</strong></p>
+        </div>
+        <hr>
+
+        <div class="row">
+            <p class="body text-justify">
+                <strong>Curos de Formación Previa para Estudios de Grado "Fórmate en..." dirigidos a los estudiantes que accedan por primera vez a la ULPGC en el curso 2021-2022.</strong><br/>
+                La Formación Previa para Estudios de Grado ¿FÓRMATE EN...¿ está dirigida a los estudiantes que acceden por primera vez a la Universidad y que, por distintas razones, no han podido cursar o no llegan
+                a los contenidos mínimos indispensables para el seguimiento de algunas de las materias básicas que se imparten en los planes de estudios actuales de las ramas de Ciencias, de Ciencias de la Salud
+                y de Ingeniería y Arquitectura. Para el logro de estos fines, se propondrán cursos y se garantizará un seguimiento personalizado de los estudiantes, organizando la docencia en grupos reducidos.
+                Con estos cursos, se persigue, por una parte, proporcionar a los estudiantes de nuevo ingreso los contenidos mínimos indispensables para el seguimmiento de las disciplinas de primer curso con mayor
+                grado de dificultad, además de homogeneizar el nivel de partida de los estudiantes que cursan estas asignaturas, de modo que se pueda lograr que adquieran los conocimientos y destrezas instrumentales
+                básicas para desarrollar con éxito el primer curso universitario. La superación de cada curso permitirá el reconocimiento automático en el expediente del alumnado de 3 créditos, conforme al apartado
+                1 del artículo 3 del Reglamento para el Reconocimiento Académico de Créditos por la Participación en Actividades Universitarias, Culturales, Deportivas, de Representación Estudiantil, Solidarias y de
+                Cooperación de los Estudiantes de la ULPGC Competencias generales de los cursos: -Saber plantear y resolver problemas relacionados con las materias de estudio. -Tener la capacidad de aprender y aplicar
+                los conocimientos en la práctica en relación a las materias de estudio. -Desarrollar la capacidad para ser autónomo y para el aprendizaje continuo a lo largo de toda la vida.
+            </p>
+            <p class="body mx-auto">
+                <a href="#">Pulsa aquí si deseas matricularte u obtener información sobre los mismos</a>
+            </p>
+        </div>
+        <hr>
+
+        <div class="row">
+            <p class="body w-100"><strong>SISTEMA DE CONTRASEÑA ÚNICA UNIVERSITARIA: </strong><a href="#">(más información)</a> </p>
+            <p class="body w-100 mt-n3"><strong>Has sido dado de alta correctamente</strong></p>
+            <p class="body w-100 mt-n2"><strong>TU CONTRASEÑA ES: </strong> <span class="color-orange">Zaq12wsxcde34</span> </p>
+        </div>
+        <hr>
+
+        <div class="row">
+            <p class="body w-100"><strong>ACCESO AL CORREO INSTITUCIONAL: Podrás acceder desde el día siguiente a tu fecha de matrícula.</strong></p>
+            <p class="body w-100 mt-n3"><strong>Tu cuenta de correo electrónico es...</strong> <span class="color-orange">almudena.perez106@alu.ulpgc.es</span></p>
+        </div>
+        <hr>
+
+        <div class="row mx-auto">
+            <p class="body w-100"><strong>ACCESO AL WEB INSTITUCIONAL:</strong></p>
+            <p class="body w-100 mt-n3"><strong>ALTA EN MiULPGC CORRECTA...</strong></p>
+            <p class="body w-100 mt-n2 text-justify"><strong>Accede al Web Institucional introduciendo tu DNI y Contraseña Única Universitaria, al apartado Mi Contraseña, para modificar tu clave y
+                definir los Datos de Recuperación de Contraseña para el caso de que se te olvide:</strong></p>
+            <p class="body mt-n3 mx-auto"><a href="#">https://www.ulpgc.es/index.php?pagina=miulpgc&ver=miscontrasenias</a> </p>
+        </div>
+        <hr>
+
+        <div class="row">
+            <p class="body"><a href="#">Manual de Acogida al Estudiante en Materia de Prevención de Riesgos</a> </p>
+        </div>
+        <hr>
+    </div>
+
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper float-left mb-3">
+                <div class="row mx-auto">
+                    <div class="col-6">
+                        <div class="footer-logo">
+                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
+                            <a class="m-1 align-bottom" href="/design">Portada</a>
+                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Fundamentos de los Sistemas Operativos - Matrícula
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        function redirigir() {
+            $.ajax({
+                method: 'POST',
+                url: '',
+                success: function (/*data*/) {
+                    window.location.replace("/matricula7");
+                },
+                error: function () {
+                    bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página.");
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
+    <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
+{% endblock %}
