@@ -18,59 +18,67 @@
         </ul>
     </nav>
 
- <form class="ml-5 ulpgcds-form" method="post" onsubmit="redirigir()">
-     <h6 class="title-xs color-blue mt-5">3.3.1 Familia Numerosa</h6>
+    <div class="ulpgcds-grid">
+        <div class="row mx-auto">
+            <progress id="bp" class="ulpgcds-progressbar bg-bar" value="3" max="9">
+                <span>Progreso: <span class="pval">3</span><strong>/9</strong></span>
+            </progress>
+        </div>
 
-     <div class="ulpgcds-form__item">
-         <fieldset id="padreFnum" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Tipo de Familia Numerosa:</legend>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fnume1" name="fnume" type="radio" value="General"/> <label for="fnume1">General</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fnume2" name="fnume" type="radio" value="Especial" checked/><label for="fnume2">Especial</label>
-             </div>
-         </fieldset>
-     </div>
+        <form class="ulpgcds-form" method="post" onsubmit="redirigir()">
+            <h6 class="title-xs color-blue mt-5">3.3.1 Familia Numerosa</h6>
 
-     <div class="ulpgcds-form__item">
-         <label for="text-input-id-1">Carné</label>
-         <input id="text-input-id-1" name="text-input" type="text"/>
-     </div>
-     <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-         <label for="dropdown"><button class="ulpgcds-tooltip"
+            <div class="ulpgcds-form__item">
+                <fieldset id="padreFnum" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Tipo de Familia Numerosa:</legend>
+                    <div class="ulpgcds-form__item__radio">
+                        <input id="fnume1" name="fnume" type="radio" value="General"/> <label for="fnume1">General</label>
+                    </div>
+                    <div class="ulpgcds-form__item__radio">
+                        <input id="fnume2" name="fnume" type="radio" value="Especial" checked/><label for="fnume2">Especial</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="ulpgcds-form__item">
+                <label for="text-input-id-1">Carné</label>
+                <input id="text-input-id-1" name="text-input" type="text"/>
+            </div>
+            <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
+                <label for="dropdown"><button class="ulpgcds-tooltip"
                                               data-simpletooltip-text="Comunidad autónoma en que fue expedido el carnet de familia numerosa"
                                               role="tooltip">Comunidad Autónoma
-                 <span class="ulpgcds-icon ulpgcds-icon-alert ulpgcds-icon--right"></span></button></label>
-         <select id="dropdown" name="dropdown">
-             <option value="" >Escoja una opción</option>
-             <option value="2">Andalucía</option>
-             <option value="1">Aragón</option>
-             <option value="3">Canarias</option>
-             <option value="4">Cantabria</option>
-             <option value="6">Castilla y León</option>
-             <option value="5">Castila-La Mancha</option>
-         </select>
-     </div>
+                        <span class="ulpgcds-icon ulpgcds-icon-alert ulpgcds-icon--right"></span></button></label>
+                <select id="dropdown" name="dropdown">
+                    <option value="" >Escoja una opción</option>
+                    <option value="2">Andalucía</option>
+                    <option value="1">Aragón</option>
+                    <option value="3">Canarias</option>
+                    <option value="4">Cantabria</option>
+                    <option value="6">Castilla y León</option>
+                    <option value="5">Castila-La Mancha</option>
+                </select>
+            </div>
 
-     <div class="ulpgcds-form__item">
-         <fieldset id="fsTipo" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Tipo:</legend>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fsTipo1" name="fsTipo" type="radio" /> <label for="fsTipo1">2 Hijos</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input id="fsTipo2" name="fsTipo" type="radio" /><label for="fsTipo2">3 Hijos</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input checked="checked" id="fsTipo3" name="fsTipo" type="radio" /> <label for="fsTipo3">4 Hijos</label>
-             </div>
-             <div class="ulpgcds-form__item__radio">
-                 <input checked="checked" id="fsTipo4" name="fsTipo" type="radio" /> <label for="fsTipo4">Otros</label>
-             </div>
-         </fieldset>
-     </div>
+            <div class="ulpgcds-form__item">
+                <fieldset id="fsTipo" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Tipo:</legend>
+                    <div class="ulpgcds-form__item__radio">
+                        <input id="fsTipo1" name="fsTipo" type="radio" /> <label for="fsTipo1">2 Hijos</label>
+                    </div>
+                    <div class="ulpgcds-form__item__radio">
+                        <input id="fsTipo2" name="fsTipo" type="radio" /><label for="fsTipo2">3 Hijos</label>
+                    </div>
+                    <div class="ulpgcds-form__item__radio">
+                        <input checked="checked" id="fsTipo3" name="fsTipo" type="radio" /> <label for="fsTipo3">4 Hijos</label>
+                    </div>
+                    <div class="ulpgcds-form__item__radio">
+                        <input checked="checked" id="fsTipo4" name="fsTipo" type="radio" /> <label for="fsTipo4">Otros</label>
+                    </div>
+                </fieldset>
+            </div>
 
-     <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Confirmar Datos"/>
- </form>
+            <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Confirmar Datos"/>
+        </form>
+    </div>
 
     <footer>
         <div class="ulpgcds-footer">

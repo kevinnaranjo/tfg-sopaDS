@@ -25,21 +25,28 @@
             Centro: Facultad de Filología
         </h6>
     </div>
-
     <hr/>
 
-    <div class="mx-auto text-center">
-        <p class="Body color-blue">Su dedicación actual en esta titulación es COMPLETA</p>
-        <p class="Body color-blue">De acuerdo a la Normativa de Progreso y Permanencia debe matricularse en al menos 60 créditos y como máximo de 60 créditos</p>
-    </div>
-
-    <form class="ml-5 mt-3 ulpgcds-form" method="post" onsubmit="redirigir()">
-        <div class="ulpgcds-form__item d-flex flex-row justify-content-start align-items-center">
-            <label for="btnCambio">Pulse el siguiente botón para solicitar el cambio de dedicación: </label>
-            <button class="ulpgcds-btn ulpgcds-btn--secondary ulpgcds-btn--small ml-3">Cambio dedic.</button>
+    <div class="ulpgcds-grid">
+        <div class="row mx-auto">
+            <progress id="bp" class="ulpgcds-progressbar bg-bar" value="4" max="9">
+                <span>Progreso: <span class="pval">4</span><strong>/9</strong></span>
+            </progress>
         </div>
-        <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Continuar"/>
-    </form>
+
+        <div class="row mx-auto text-center">
+            <p class="Body color-blue mx-auto w-100">Su dedicación actual en esta titulación es COMPLETA</p>
+            <p class="Body color-blue mx-auto w-100">De acuerdo a la Normativa de Progreso y Permanencia debe matricularse en al menos 60 créditos y como máximo de 60 créditos</p>
+        </div>
+
+        <form class="ulpgcds-form" method="post" onsubmit="redirigir()">
+            <div class="ulpgcds-form__item d-flex flex-row justify-content-start align-items-center">
+                <label for="btnCambio">Pulse el siguiente botón para solicitar el cambio de dedicación: </label>
+                <button class="ulpgcds-btn ulpgcds-btn--secondary ulpgcds-btn--small ml-3">Cambio dedic.</button>
+            </div>
+            <input class="ulpgcds-btn ulpgcds-btn--primary" type="submit" value="Continuar"/>
+        </form>
+    </div>
 
     <footer>
         <div class="ulpgcds-footer">
