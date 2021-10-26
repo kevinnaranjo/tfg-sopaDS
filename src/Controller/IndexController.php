@@ -75,13 +75,14 @@ class IndexController extends AbstractController
 
 
     /**
-     * @Route("/bbdd", name="bbdd")
+     * @Route("/bbdd/{anno}", name="bbdd")
      * @param HomeDataAccess $dataAccess
+     * @param int $anno
      */
-    public function bbddPage(HomeDataAccess $dataAccess)
+    public function bbddPage(HomeDataAccess $dataAccess, int $anno)
     {
         return$this->render('examanesDinamicoDS.html.twig', [
-            "examenes" => $dataAccess->getExamenesPrueba()
+            "examenes" => $dataAccess->getExamenesPrueba($anno)
         ]);
     }
 

@@ -21,10 +21,10 @@
     <form class="ulpgcds-form ml-5">
         <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
             <label for="dropdown">Label</label>
-            <select id="dropdown" name="dropdown" class="chosen" multiple="multiple">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+            <select id="dropdown" name="dropdown" onchange="redirigir()">
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
             </select>
             <div class="help-text">Help text goes here</div>
         </div>
@@ -409,7 +409,6 @@
             </div>#}
         {% endif %}
 
-
     <footer>
         <div class="ulpgcds-footer">
             <div class="ulpgcds-footer__top wrapper float-left mb-3">
@@ -449,6 +448,13 @@
             if ($(tab_id))
                 $(tab_id).addClass('active');
         });
+    </script>
+    <script type="text/javascript">
+        function redirigir() {
+            var desplegable = document.getElementById("dropdown");
+            var anno = desplegable.value;
+            window.location.replace('/bbdd/' + anno);
+        }
     </script>
     <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
     </script>
