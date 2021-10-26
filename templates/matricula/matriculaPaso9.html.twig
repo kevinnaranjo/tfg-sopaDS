@@ -112,7 +112,16 @@
                 </div>
             </fieldset>
 
-            <button class="ulpgcds-btn ulpgcds-btn--primary">Generar resguardo de matrícula (formato PDF)</button>
+            <div class="col-6">
+                <button class="ulpgcds-btn ulpgcds-btn--primary" onclick="simularCarga()">Generar resguardo de matrícula (formato PDF)</button>
+            </div>
+
+            <div id="carga" class="ulpgcds-loader col-3 d-none" role="alert" aria-busy="true">
+                <svg viewBox="0 0 50 50" class="spinner-1">
+                    <circle class="ring" cx="25" cy="25" r="22.5"/>
+                    <circle class="line" cx="25" cy="25" r="22.5"/>
+                </svg>
+            </div>
         </div>
         <hr>
     </div>
@@ -146,17 +155,12 @@
 
 {% block js %}
     <script type="text/javascript">
-        function redirigir() {
-            $.ajax({
-                method: 'POST',
-                url: '',
-                success: function (/*data*/) {
-                    window.location.replace("/matricula7");
-                },
-                error: function () {
-                    bootbox.alert("Ha ocurrido un error interno. No se ha podido redirigir a la siguiente página.");
-                }
-            });
+        function simularCarga() {
+            var div = document.getElementById("carga");
+            div.classList.remove("d-none");
+            setTimeout(function () {
+                div.classList.add("d-none");
+            }, 5000);
         }
     </script>
     <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
