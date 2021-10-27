@@ -6,13 +6,13 @@
         <a id="logoInicio" href="#"> <img src="assets/version_max_red_2t.svg"></a>
     </div>
     <div>
-        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
-        </h1>
+        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos</h1>
         <a href="teoria">teoria</a>
         <a href="teoriaSinTabla">teoria sin tabla</a>
-        <a href="{{ path('bbdd', {"anno" : 2021}) }}">examenes</a>
+        <a href="{{ path('bbdd', {"anno" : 2020}) }}">examenes</a>
         <a href="form">formularioUno</a>
         <a href="matricula">matricula</a>
+        <a href="{{ path('examenes') }}">examenes viejo</a>
     </div>
 
     <div class="row">
@@ -93,7 +93,7 @@
                     <a href="http://sopa.dis.ulpgc.es/fso/examenes/instrucciones%20examen%20FSO.pdf">Instrucciones para el examen</a>
                 </li>
                 <li>
-                    <a href="examenes">Exámenes de cursos anteriores y soluciones</a>
+                    <a href="{{ path('bbdd', {"anno" : 2020}) }}">Exámenes de cursos anteriores y soluciones</a>
                 </li>
             </ul>
         </div>

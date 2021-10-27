@@ -1,0 +1,322 @@
+<ul class="ml-5 mr-5 ulpgcds-tabs">
+    <li class="active" href="#tab-1">Examen Parcial</li>
+    <li href="#tab-2">Convocatoria ordinaria</li>
+    <li href="#tab-3">Convocatoria extraordinaria</li>
+    <li href="#tab-4">Convocatoria especial</li>
+</ul>
+
+{% if examenes is empty %}
+    <div class="ml-5">
+        <p class="principal">No hay examenes disponibles</p>
+    </div>
+{% else %}
+    {% set partes = 0 %}
+    {% set partesExtraordinaria = 0 %}
+    {% set partesEspecial = 0 %}
+    {% for examen in examenes %}
+        {% if examen.convocatoria == 0 %}
+            <div class="ml-5 mr-5 ulpgcds-tab-content active" id="tab-1">
+                {% if examen.fecha  is null %}
+                    <h3>Examen Parcial ({{ examen.anno }}):</h3>
+                {% else %}
+                    <h3>Examen Parcial ({{ examen.fecha|date("d/m/Y")}}):</h3>
+                {% endif %}
+                <ul class="ulpgcds-list">
+                    <li>Enunciado:
+                        {% if examen.enunciado_ejercicio  is not null %}
+                            <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.enunciado_test  is not null %}
+                            <a href="{{ examen.enunciado_test }}">Test</a>
+                        {% endif %}
+                    </li>
+                    <li>Soluciones:
+                        {% if examen.solucion_ejercicio  is not null %}
+                            <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.solucion_test  is not null %}
+                            <a href="{{ examen.solucion_test }}">Test</a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        {% endif %}
+        {% if examen.convocatoria == 1 %}
+            {% if partes == 0 %}
+                <div class="ml-5 mr-5 ulpgcds-tab-content" id="tab-2">
+                {% if examen.fecha  is null %}
+                    <h3>Convocatoria ordinaria ({{ examen.anno }}):</h3>
+                {% else %}
+                    <h3>Convocatoria ordinaria ({{ examen.fecha|date("d/m/Y") }}):</h3>
+                {% endif %}
+            {% endif %}
+            <ul class="ulpgcds-list">
+                {% if examen.parte == 1 %}
+                    <li>
+                        Primera parte (temas 1, 2 y 3):
+                        <ul>
+                            <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                                    <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.enunciado_test  is not null %}
+                                    <a href="{{ examen.enunciado_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                            <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                                    <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.solucion_test  is not null %}
+                                    <a href="{{ examen.solucion_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if examen.parte == 2 %}
+                    <li>
+                        Segunda Parte (temas 4 y 5):
+                        <ul>
+                            <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                                    <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.enunciado_test  is not null %}
+                                    <a href="{{ examen.enunciado_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                            <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                                    <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.solucion_test  is not null %}
+                                    <a href="{{ examen.solucion_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if examen.parte == 0 %}
+                    <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                            <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.enunciado_test  is not null %}
+                            <a href="{{ examen.enunciado_test }}">Test</a>
+                        {% endif %}
+                    </li>
+
+                    <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                            <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.solucion_test  is not null %}
+                            <a href="{{ examen.solucion_test }}">Test</a>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            </ul>
+            {% if partes == 1 %}
+                </div>
+            {% endif %}
+            {% set partes = partes + 1 %}
+        {% endif %}
+
+        {% if examen.convocatoria == 2 %}
+            {% if partesExtraordinaria == 0 %}
+                <div class="ml-5 mr-5 ulpgcds-tab-content" id="tab-3">
+                {% if examen.fecha  is null %}
+                    <h3>Convocatoria extraordinaria ({{ examen.anno }}):</h3>
+                {% else %}
+                    <h3>Convocatoria extraordinaria ({{ examen.fecha|date("d/m/Y") }}):</h3>
+                {% endif %}
+            {% endif %}
+            <ul class="ulpgcds-list">
+                {% if examen.parte == 1 %}
+                    <li>
+                        Primera parte (temas 1, 2 y 3):
+                        <ul>
+                            <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                                    <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.enunciado_test  is not null %}
+                                    <a href="{{ examen.enunciado_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                            <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                                    <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.solucion_test  is not null %}
+                                    <a href="{{ examen.solucion_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if examen.parte == 2 %}
+                    <li>
+                        Segunda Parte (temas 4 y 5):
+                        <ul>
+                            <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                                    <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.enunciado_test  is not null %}
+                                    <a href="{{ examen.enunciado_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                            <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                                    <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.solucion_test  is not null %}
+                                    <a href="{{ examen.solucion_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if examen.parte == 0 %}
+                    <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                            <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.enunciado_test  is not null %}
+                            <a href="{{ examen.enunciado_test }}">Test</a>
+                        {% endif %}
+                    </li>
+
+                    <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                            <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.solucion_test  is not null %}
+                            <a href="{{ examen.solucion_test }}">Test</a>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            </ul>
+            {% if partesExtraordinaria == 1 %}
+                </div>
+            {% endif %}
+            {% set partesExtraordinaria = partesExtraordinaria + 1 %}
+        {% endif %}
+
+        {% if examen.convocatoria == 3 %}
+            {% if partesEspecial == 0 %}
+                <div class="ml-5 mr-5 ulpgcds-tab-content" id="tab-4">
+                {% if examen.fecha  is null %}
+                    <h3>Convocatoria especial ({{ examen.anno }}):</h3>
+                {% else %}
+                    <h3>Convocatoria especial ({{ examen.fecha|date("d/m/Y")}}):</h3>
+                {% endif %}
+            {% endif %}
+            <ul class="ulpgcds-list">
+                {% if examen.parte == 1 %}
+                    <li>
+                        Primera parte (temas 1, 2 y 3):
+                        <ul>
+                            <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                                    <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.enunciado_test  is not null %}
+                                    <a href="{{ examen.enunciado_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                            <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                                    <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.solucion_test  is not null %}
+                                    <a href="{{ examen.solucion_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if examen.parte == 2 %}
+                    <li>
+                        Segunda Parte (temas 4 y 5):
+                        <ul>
+                            <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                                    <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.enunciado_test  is not null %}
+                                    <a href="{{ examen.enunciado_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                            <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                                    <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                                {% endif %}
+                                {% if examen.solucion_test  is not null %}
+                                    <a href="{{ examen.solucion_test }}">Test</a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if examen.parte == 0 %}
+                    <li>Enunciado: {% if examen.enunciado_ejercicio  is not null %}
+                            <a href="{{ examen.enunciado_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.enunciado_test  is not null %}
+                            <a href="{{ examen.enunciado_test }}">Test</a>
+                        {% endif %}
+                    </li>
+
+                    <li>Soluciones: {% if examen.solucion_ejercicio  is not null %}
+                            <a href="{{ examen.solucion_ejercicio }}">Ejercicios</a>
+                        {% endif %}
+                        {% if examen.solucion_test  is not null %}
+                            <a href="{{ examen.solucion_test }}">Test</a>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            </ul>
+            {% if partesEspecial == 1 %}
+                </div>
+            {% endif %}
+            {% set partesEspecial = partesEspecial + 1 %}
+        {% endif %}
+
+    {% endfor %}
+
+{% endif %}
+{% block js %}
+    <script type="text/javascript">
+        $('.ulpgcds-tabs li').click(function(){
+            var tab_id = $(this).attr('href');
+
+            $(this).parent().find("li").removeClass('active');
+            $('.tab-content').removeClass('active');
+
+            $(this).addClass('active');
+            if ($(tab_id))
+                $(tab_id).addClass('active');
+        });
+    </script>
+    <script type="text/javascript">
+        function obtenerExamenes() {
+            var desplegable = document.getElementById("dropdown");
+            var anno = desplegable.value;
+            $.ajax({
+                method: 'POST',
+                url: '{{ path('filtrado') }}',
+                data: {
+                    "anno" : anno,
+                },
+                success: function(data) {
+                    if (data.content) {
+                        $("#examenWrapper").empty().append(data.content);
+                    } else {
+                        bootbox.alert("Hubo un error al consultar los exámenes. Por favor, inténtalo de nuevo más tarde.");
+                    }
+                },
+                error: function() {
+                    bootbox.alert("Hubo un error al consultar los exámenes. Por favor, inténtalo de nuevo más tarde.")
+                }
+            });
+        }
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+{% endblock %}

@@ -5,9 +5,12 @@ namespace App\Controller;
 
 
 use App\Service\HomeDataAccess;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 class IndexController extends AbstractController
 {
@@ -82,7 +85,25 @@ class IndexController extends AbstractController
     public function bbddPage(HomeDataAccess $dataAccess, int $anno)
     {
         return$this->render('examanesDinamicoDS.html.twig', [
-            "examenes" => $dataAccess->getExamenesPrueba($anno)
+            "examenes" => $dataAccess->getExamenesPorAnno($anno)
+        ]);
+    }
+
+    /**
+     * @Route("/filtrado", name="filtrado")
+     * @param HomeDataAccess $dataAccess
+     * @return JsonResponse
+     */
+    public function filtrado(Request $request, HomeDataAccess $dataAccess): JsonResponse
+    {
+        if (!$request->request->has("anno")) {
+            throw new AccessDeniedException();
+        }
+
+        return new JsonResponse([
+            'content' => $this->renderView('examenesTabs.html.twig', [
+                "examenes" => $dataAccess->getExamenesPorAnno($request->request->get("anno")),
+            ]),
         ]);
     }
 

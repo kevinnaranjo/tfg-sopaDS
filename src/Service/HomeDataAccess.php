@@ -12,7 +12,7 @@ class HomeDataAccess extends DataAccess
         return parent::executeSQL("SELECT * FROM prueba")->fetchAll();
     }
 
-    public function getExamenesPrueba(int $anno)
+    public function getExamenesPorAnno(int $anno)
     {
         return parent::executeSQL("SELECT * FROM examen where anno = $anno")->fetchAll();
     }
