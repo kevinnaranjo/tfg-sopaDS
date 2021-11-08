@@ -196,6 +196,40 @@ class IndexController extends AbstractController
         return $this->render('matricula/matriculaPaso9.html.twig');
     }
 
+    /**
+     * @Route("/senderismo", name="senderismo")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function senderismo(HomeDataAccess $dataAccess)
+    {
+        return $this->render('landingPage/landingpageSenderismo.html.twig');
+    }
 
+    /**
+     * @Route("/kayak", name="kayak")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function kayak(HomeDataAccess $dataAccess)
+    {
+        return $this->render('landingPage/landingpageKayak.html.twig');
+    }
+
+    /**
+     * @Route("/playas", name="playas")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function playas(HomeDataAccess $dataAccess)
+    {
+        return $this->render('landingPage/landingpageBuceo.html.twig');
+    }
+
+    /**
+     * @Route("/forestal", name="forestal")
+     * @param HomeDataAccess $dataAccess
+     */
+    public function forestal(HomeDataAccess $dataAccess)
+    {
+        return $this->render('landingPage/landingpageTraining.html.twig');
+    }
 
 }

@@ -1,0 +1,439 @@
+{% extends 'base/base.html.twig' %}
+
+{% block body %}
+
+    <header class="ulpgcds-header">
+
+        <div id="logo" style="width: 30%">
+            <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+        </div>
+        {#<div>
+            <h1  class="title-xl">Actividades ULPGC
+            </h1>
+        </div>#}
+        {#<div class="ulpgcds-header__top">
+            <div class="ulpgcds-header__top__logo">
+                <a id="logoInicio" href="inicio"> <img src="assets/logo_ulpgc_version_horizontal_negativa_de_uso_cotidiano_a_2_tintas.png"></a>
+            </div>
+            <div class="ulpgcds-header__top__links">
+                <ul>
+                    <li class="hidden-mobile"><a href="https://correo.ulpgc.es/" class="ulpgcds-btn ulpgcds-btn--text"><span class="ulpgcds-btn__icon ulpgcds-icon-envelope" aria-hidden="true"></span>Link 1</a></li>
+                    <li class="hidden-mobile"><a href="https://biblioteca.ulpgc.es" class="ulpgcds-btn ulpgcds-btn--text"><span class="ulpgcds-btn__icon ulpgcds-icon-book" aria-hidden="true"></span>Link 2</a></li>
+                    <li><a href="/" class="ulpgcds-btn ulpgcds-btn--small ulpgcds-btn--primary"><span class="ulpgcds-btn__icon ulpgcds-icon-user" aria-hidden="true"></span>Login</a></li>
+                    <li><a class="nav-toggle hidden-desktop ulpgcds-btn ulpgcds-btn--small ulpgcds-btn--secondary" href="#"><span class="ulpgcds-btn__icon ulpgcds-icon-menu" aria-hidden="true"></span>Menú</a></li>
+                </ul>
+            </div>
+        </div>#}
+    </header>
+
+
+    {# <ul class="ulpgcds-carrusel ulpgcds-carrusel--small">
+        <li><img src="https://pbs.twimg.com/profile_images/1208008150294679553/6vgY0c62_400x400.jpg" alt="Texto alternativo imagen 1" /></li>
+        <li><img src=https://pbs.twimg.com/profile_images/1208008150294679553/6vgY0c62_400x400.jpg"" alt="Texto alternativo imagen 2" /></li>
+        <li><img src="https://pbs.twimg.com/profile_images/1208008150294679553/6vgY0c62_400x400.jpg" alt="Texto alternativo imagen 3" /></li>
+        <li><img src="https://pbs.twimg.com/profile_images/1208008150294679553/6vgY0c62_400x400.jpg" alt="Texto alternativo imagen 4" /></li>
+    </ul> #}
+
+
+
+{#    <div class="ulpgcds-grid">#}
+    <main class="main-content-web mt-5">
+        <div class="sidebar-left" style="height: 100vh">
+            <ul class="menu">
+                <li><span class="nolink">Descubre nuestras actividades</span>
+                    <ul>
+                        <li class="active"><a href="#">Senderismo</a></li>
+                        <li><a href="kayak">Kayak</a></li>
+                        <li><a href="playas">Buceo</a></li>
+                        <li><a href="forestal">Circuit training</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-section">
+            <div class="main-section">
+                <h1 class="page-title">Senderismo ULPGC</h1>
+                <div class="ulpgcds-video">
+                    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/NdbUfLll2J0" width="560"></iframe>
+                </div>
+
+
+                <p class="text-justify">Bienvenidos a la web institucional del Servicio de Deportes de la Universidad de Las Palmas de Gran Canaria. A continuación, te invitamos a conocer
+                los detalles de la actividad <strong>Senderismo "Desde Tamadaba por las presas"</strong>. En esta ruta podrás disfrutar del lado más verde de la isla
+                en unos senderos que destacan por sus grandes vistas y comodidad.</p>
+
+                <h2>Detalles de la actividad</h2>
+
+                <p>Conoce aquí toda la información necesaria para el evento</p>
+
+                <ul class="ulpgcds-list">
+                    <li><strong>Fecha de realización: </strong>2 octubre 2021.</li>
+                    <li><strong>Distancia: </strong>10.3 km aprox.</li>
+                    <li><strong>Duración aproximada: </strong>4:30 horas.</li>
+                    <li><strong>Dificultad: </strong>media</li>
+                    <li><strong>Incluye:</strong><ul>
+                            <li>2 Técnicos deportivos</li>
+                            <li>Seguro de accidente</li>
+                            <li>Seguro R.C</li>
+                            <li>Transporte de ida y vuelta</li>
+                            <li>Tríptico informativo</li>
+                        </ul></li>
+                    <li><strong>Precio comunidad universitaria: </strong>6€</li>
+                    <li><strong>Precio externos: </strong>10€</li>
+                    <li><strong>Lugar de salida: </strong><ul>
+                            <li>Fuente luminosa: 7:00 horas</li>
+                            <li>Campus Universitario de Tafira: 7:15 horas</li>
+                        </ul></li>
+                </ul>
+
+                <button class="ulpgcds-btn ulpgcds-btn--primary">¡Quiero unirme!</button>
+            {#<div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://adondevamoshoytenerife.com/wp-content/uploads/2016/12/15235517_1193011777453699_4800837126496131847_o-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">16 Junio 2021</div>
+                        <h3>Senderismo ULPGC</h3>
+                    </a>
+                    <p>Abierta la inscripción para 7ª edición de <strong>Senderismo ULPGC</strong></p>
+                </article>
+
+                <article class="ulpgcds-article ml-5">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://windkitesurf.com/wp-content/uploads/2018/06/portada-primeros-pasos-kayak.jpg"/>
+                        <div class="ulpgcds-article__date">26 Junio 2021</div>
+                        <h3>Kayak ULPGC</h3>
+                    </a>
+                    <p>Disfruta este verano de un campus en las Canteras practicando Kayak</p>
+                </article>
+            </div>
+
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://s.yimg.com/ny/api/res/1.2/2h3WF1MfcGD9Lm9VtsT_dA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTMyMA--/https://s.yimg.com/uu/api/res/1.2/lDJWxG3sRmHLfIrS5Lzt5w--~B/aD0zMDA7dz02MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/es/sandiegored_883/5093c7aba1779a5ecaad312f9afd0a0e"/>
+                        <div class="ulpgcds-article__date">03 Ago 2021</div>
+                        <h3>Cuidemos nuestras playas ULPGC</h3>
+                    </a>
+                    <p>Únete a esta recogida solidaria de nuestras playas. Juntos salvaremos la fauna canaria</p>
+                </article>
+
+                <article class="ulpgcds-article ml-5">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="http://www.laspalmas24.com/content/images/b2df2e8cd1e35395d3cd2bcc6a76fa5f.jpg"/>
+                        <div class="ulpgcds-article__date">17 Mayo 2021</div>
+                        <h3>Limpieza forestal ULPGC</h3>
+                    </a>
+                    <p>Ayuda a prevenir incendios este verano manteniendo nuestros montes limpios</p>
+                </article>
+            </div>
+
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo" src="https://s1.1zoom.me/prev/505/504208.jpg"/>
+                        <div class="ulpgcds-article__date">13 Mayo 2021</div>
+                        <h3>Fútbol ULPGC</h3>
+                    </a>
+                    <p>Inscríbete en la 16º edición del torneo de fútbol 11 en el campus de Tafira</p>
+                </article>
+
+                <article class="ulpgcds-article ml-5">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://atletismecastello.es/wp-content/uploads/2018/04/267242705-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">13 Ago 2021</div>
+                        <h3>Atletismo ULPGC</h3>
+                    </a>
+                    <p>Este verano ponemos a tu disposición al campeón de Canarias en 100m lisos y 400m vallas para
+                        formarte</p>
+                </article>
+            </div>#}
+        </div>
+
+       {# <section id="prueba">
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://atletismecastello.es/wp-content/uploads/2018/04/267242705-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">13 Ago 2021</div>
+                        <h3>Atletismo ULPGC</h3>
+                    </a>
+                    <p>Este verano ponemos a tu disposición al campeón de Canarias en 100m lisos y 400m vallas para
+                        formarte</p>
+                </article>
+                <ul class="ulpgcds-list">
+                    <li>Item 1</li>
+                    <li>Item 2 con más texto</li>
+                    <li>Item 3 con más texto que el item 2</li>
+                </ul>
+            </div>
+        </section>#}
+
+       {# <section id="prueba2">
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://atletismecastello.es/wp-content/uploads/2018/04/267242705-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">13 Ago 2021</div>
+                        <h3>Atletismo ULPGC</h3>
+                    </a>
+                    <p>Este verano ponemos a tu disposición al campeón de Canarias en 100m lisos y 400m vallas para
+                        formarte</p>
+                </article>
+                <ul class="ulpgcds-list">
+                    <li>Item 1</li>
+                    <li>Item 2 con más texto</li>
+                    <li>Item 3 con más texto que el item 2</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="prueba3">
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://atletismecastello.es/wp-content/uploads/2018/04/267242705-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">13 Ago 2021</div>
+                        <h3>Atletismo ULPGC</h3>
+                    </a>
+                    <p>Este verano ponemos a tu disposición al campeón de Canarias en 100m lisos y 400m vallas para
+                        formarte</p>
+                </article>
+                <ul class="ulpgcds-list">
+                    <li>Item 1</li>
+                    <li>Item 2 con más texto</li>
+                    <li>Item 3 con más texto que el item 2</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="prueba4">
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://atletismecastello.es/wp-content/uploads/2018/04/267242705-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">13 Ago 2021</div>
+                        <h3>Atletismo ULPGC</h3>
+                    </a>
+                    <p>Este verano ponemos a tu disposición al campeón de Canarias en 100m lisos y 400m vallas para
+                        formarte</p>
+                </article>
+                <ul class="ulpgcds-list">
+                    <li>Item 1</li>
+                    <li>Item 2 con más texto</li>
+                    <li>Item 3 con más texto que el item 2</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="prueba5">
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://atletismecastello.es/wp-content/uploads/2018/04/267242705-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">13 Ago 2021</div>
+                        <h3>Atletismo ULPGC</h3>
+                    </a>
+                    <p>Este verano ponemos a tu disposición al campeón de Canarias en 100m lisos y 400m vallas para
+                        formarte</p>
+                </article>
+                <ul class="ulpgcds-list">
+                    <li>Item 1</li>
+                    <li>Item 2 con más texto</li>
+                    <li>Item 3 con más texto que el item 2</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="prueba6">
+            <div class="row">
+                <article class="ulpgcds-article">
+                    <a href="#">
+                        <img alt="Texto descriptivo"
+                             src="https://atletismecastello.es/wp-content/uploads/2018/04/267242705-600x300.jpg"/>
+                        <div class="ulpgcds-article__date">13 Ago 2021</div>
+                        <h3>Atletismo ULPGC</h3>
+                    </a>
+                    <p>Este verano ponemos a tu disposición al campeón de Canarias en 100m lisos y 400m vallas para
+                        formarte</p>
+                </article>
+                <ul class="ulpgcds-list">
+                    <li>Item 1</li>
+                    <li>Item 2 con más texto</li>
+                    <li>Item 3 con más texto que el item 2</li>
+                </ul>
+            </div>
+        </section>#}
+    </main>
+
+    <footer>
+        <div class="ulpgcds-footer">
+            <div class="ulpgcds-footer__top wrapper">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="footer-logo"></div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Datos contacto 1</h3>
+                                <p>Esto es un ejemplo</p>
+                                <p>Tlf: 111111111</p>
+                            </div>
+                            <div class="col-6">
+                                <h3>Datos contacto 2</h3>
+                                <p>Email: contacto@ulpgc.es</p>
+                            </div>
+                        </div>
+                        <div class="ulpgcds-footer__social">
+                            <h3>Síguenos en</h3>
+                            <ul>
+                                <li class="twitter"><a href="https://twitter.com/ulpgc"
+                                                       class="ulpgcds-btn ulpgcds-btn--ghost ulpgcds-btn--icon"
+                                                       target="_blank"><i
+                                                class="ulpgcds-btn__icon icon-twitter"></i><span>Twitter</span></a></li>
+                                <li class="flickr"><a href="http://www.flickr.com/photos/ulpgc"
+                                                      class="ulpgcds-btn ulpgcds-btn--ghost ulpgcds-btn--icon"
+                                                      target="_blank"><i
+                                                class="ulpgcds-btn__icon icon-flickr"></i><span>Flickr</span></a></li>
+                                <li class="facebook"><a
+                                            href="http://www.facebook.com/pages/Ulpgc-Para-Ti/160435343978326?sk=wall"
+                                            class="ulpgcds-btn ulpgcds-btn--ghost ulpgcds-btn--icon" target="_blank"><i
+                                                class="ulpgcds-btn__icon icon-facebook"></i><span>Facebook</span></a>
+                                </li>
+                                <li class="youtube"><a href="http://www.youtube.com/ulpgc"
+                                                       class="ulpgcds-btn ulpgcds-btn--ghost ulpgcds-btn--icon"
+                                                       target="_blank"><i
+                                                class="ulpgcds-btn__icon icon-youtube"></i><span>YouTube</span></a></li>
+                                <li class="linkedin"><a
+                                            href="http://www.linkedin.com/groups?mostPopular=&amp;gid=148332"
+                                            class="ulpgcds-btn ulpgcds-btn--ghost ulpgcds-btn--icon" target="_blank"><i
+                                                class="ulpgcds-btn__icon icon-linkedin"></i><span>LinkedIn</span></a>
+                                </li>
+                                <li class="instagram"><a href="https://www.instagram.com/ulpgc_para_ti"
+                                                         class="ulpgcds-btn ulpgcds-btn--ghost ulpgcds-btn--icon"
+                                                         target="_blank"><i
+                                                class="ulpgcds-btn__icon icon-instagram"></i><span>Instagram</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-4">
+                                <h3>Legal</h3>
+                                <ul>
+                                    <li><a href="https://www.ulpgc.es/avisio-legal">Aviso legal</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Política privacidad</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Cookies</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Accesibilidad </a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h3>Servicios</h3>
+                                <ul>
+                                    <li><a href="https://www.ulpgc.es/">Servicio 1</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Servicio 2</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Servicio 3</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Servicio 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h3>Otro bloque</h3>
+                                <ul>
+                                    <li><a href="https://www.ulpgc.es/">Enlace 1</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Enlace 2</a></li>
+                                    <li><a href="https://www.ulpgc.es/">Enlace 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ulpgcds-footer__medium">
+                <div class="wrapper">
+                    <ul>
+                        <li class="parque_cientifico"><a href="http://pct.ulpgc.es" target="_blank"><span>Parque Científico Tecnológico Universidad de Las Palmas de Gran Canaria</span></a>
+                        </li>
+                        <li class="consejo_social"><a href="http://www.csocial.ulpgc.es" target="_blank"><span>Consejo Social Universidad de Las Palmas de Gran Canaria</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ulpgcds-footer__bottom">
+                <div class="wrapper">
+                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+{% endblock %}
+
+{% block title %}
+    ULPGC · Actividades
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.ulpgcds-carrusel--small').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow: '<button type="button" class="slick-prev"><span>Anterior</span></button>',
+                nextArrow: '<button type="button" class="slick-next"><span>Siguiente</span></button>',
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: true,
+                        }
+                    }]
+            });
+        });
+
+        $('.ulpgcds-carrusel--small').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            prevArrow: '<button type="button" class="slick-prev"><span>Anterior</span></button>',
+            nextArrow: '<button type="button" class="slick-next"><span>Siguiente</span></button>',
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                    }
+                }]
+        });
+    </script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-1660551-1";
+        urchinTracker();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.ulpgc.es/ulpgcds/1.0/js/ulpgcds.js?v=1.0"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+{% endblock %}
