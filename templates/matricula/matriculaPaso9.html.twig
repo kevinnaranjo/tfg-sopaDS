@@ -2,7 +2,7 @@
 
 {% block body %}
     <div id="logo" style="width: 30%">
-        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg" alt="Error al cargar la imagen"></a>
     </div>
     <div>
         <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
@@ -94,7 +94,7 @@
         <div class="row">
             <p class="body color-orange w-100">No olvide imprimir su Resguardo como comprobante de la Matrícula, pulsando el siguiente botón:</p>
 
-            <fieldset class='ulpgcds-form__item'>
+            <fieldset class='ulpgcds-form__item'><legend></legend>
                 <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
                     <input id="option1" name="checkbox" type="checkbox" /> <label class="color-blue" for="option1">Está informado/a de que "Usted ha autorizado el acceso a la plataforma de intermediación de datos para
                         consultar sus datos de familia numerosa y se ha verificado el tipo de familia numerosa que ha seleccionado. NO es necesario que aporte documentación correspondiente a la plataforma de recepción
@@ -157,9 +157,11 @@
     <script type="text/javascript">
         function simularCarga() {
             var div = document.getElementById("carga");
+            var prueba = new Notification("Generando resguardo de matrícula", {body: "esto es una simulación"});
             div.classList.remove("d-none");
             setTimeout(function () {
                 div.classList.add("d-none");
+                prueba.close();
             }, 5000);
         }
     </script>

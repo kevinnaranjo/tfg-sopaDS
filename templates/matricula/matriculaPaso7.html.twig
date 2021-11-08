@@ -2,7 +2,7 @@
 
 {% block body %}
     <div id="logo" style="width: 30%">
-        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg" alt="Error al cargar la imagen"></a>
     </div>
     <div>
         <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
@@ -36,9 +36,11 @@
         <div class="row">
             <p class="body text-justify"><strong>A continuación se te presentan una serie de opciones que deberás chequear si es tu caso, debiendo realizar las acciones que se te indiquen con la misma,
                 como es la presentación de alguna documentación y la fecha límite de entrega. También se pregunta acerca de la forma de pago, preferencia de turno...</strong></p>
-            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
-                <input id="option1" name="checkbox" type="checkbox" /> <label for="option1">Debe pagar seguro escolar obligatorio</label>
-            </div>
+            <fieldset class="ulpgcds-form__item"><legend>Debe pagar seguro escolar obligatorio</legend>
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input id="option1" name="checkbox" type="checkbox" />  <label for="option1">Debe pagar seguro escolar obligatorio</label>
+                </div>
+            </fieldset>
         </div>
         <hr>
         <div class="row">
@@ -71,9 +73,12 @@
         <hr>
 
         <div class="row">
-            <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
-               <input id="option4" name="checkbox" type="checkbox" /> <label for="option4">Es Personal o hijo de personal de la ULPGC</label>
-            </div>
+            <fieldset class="ulpgcds-form__item">
+                <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
+                    <input id="option4" name="checkbox" type="checkbox" /> <label for="option4">Es Personal o hijo de personal de la ULPGC</label>
+                </div>
+            </fieldset>
+
             <p class="body text-justify">En el caso de seleccionar este tipo de exención no es necesario presentar documentación justificativa ya que consta en el sistema informático</p>
         </div>
         <hr>
@@ -95,7 +100,7 @@
         <div class="row">
             <p class="body text-justify">"A los estudiantes que reúnan los requisitos académicos para obtener beca M.E.C., se les recomienda que la soliciten, ya que si no lo hicieran y solicitaran
             beca C.A.C. les sería denegada por esta causa"</p>
-            <fieldset class='ulpgcds-form__item'>
+            <fieldset class='ulpgcds-form__item'><legend></legend>
                 <div class="ulpgcds-form__item ulpgcds-form__item--checkbox">
                     <input id="option6" name="checkbox" type="checkbox" /> <label for="option6"><strong>Solicita beca del Ministerio de Educación y Ciencia / País Vasco</strong></label>
                     <p class="body mt-n2">Has de presentarla conjuntamente con la matrícula, o la credencial si la presentaste en el Instituto</p>

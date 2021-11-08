@@ -2,7 +2,7 @@
 
 {% block body %}
     <div id="logo" style="width: 30%">
-        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg"></a>
+        <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg" alt="Error al cargar la imagen"></a>
     </div>
     <div>
         <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
@@ -30,17 +30,17 @@
         <form class="ulpgcds-form" method="post" onsubmit="redirigir()">
             <h4 class="title-m color-orange">1. Identificación</h4>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Nombre</label>
-                <input id="text-input-id-1" name="text-input" {#required="required"#} type="text"/>
+                <label for="inputNombre">Nombre</label>
+                <input id="inputNombre" name="text-input" {#required="required"#} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-2">Apellidos</label>
-                <input id="text-input-id-2" name="text-input" {#required="required"#} type="text"/>
+                <label for="inputApe">Apellidos</label>
+                <input id="inputApe" name="text-input" {#required="required"#} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-3">DNI</label>
-                <input id="text-input-id-3" name="text-input" {#required="required"#} type="text"/>
-                <div id="helptext-1" class="help-text">Introduzca su DNI sin letra</div>
+                <label for="inputDni">DNI</label>
+                <input id="inputDni" name="text-input" {#required="required"#} type="text"/>
+                <div id="helpDni" class="help-text">Introduzca su DNI sin letra</div>
             </div>
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="dropdown">Nacionalidad</label>
@@ -55,8 +55,7 @@
                 </select>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="fieldset1">Sexo</label>
-                <fieldset id="fieldset1" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                <fieldset id="fieldsetSexo" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Sexo</legend>
                     <div class="ulpgcds-form__item__radio">
                         <input id="option3" name="radio" type="radio" /> <label for="option3">Masculino</label>
                     </div>
@@ -66,19 +65,19 @@
                 </fieldset>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Teléfono Fijo (Opcional)</label>
-                <input id="text-input-id-1" name="text-input" type="text"/>
+                <label for="inputTlfn">Teléfono Fijo (Opcional)</label>
+                <input id="inputTlfn" name="text-input" type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Teléfono Móvil</label>
-                <input id="text-input-id-1" name="text-input" {#required="required"#} type="text"/>
+                <label for="inputMovil">Teléfono Móvil</label>
+                <input id="inputMovil" name="text-input" {#required="required"#} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Correo electrónico</label>
-                <input id="text-input-id-1" name="text-input" {#required="required"#} type="email"/>
+                <label for="inputCorreo">Correo electrónico</label>
+                <input id="inputCorreo" name="text-input" {#required="required"#} type="email"/>
             </div>
 
-            <hr class="divider-2"></hr>
+            <hr class="divider-2">
             <h4 class="title-m color-orange">2. Datos de nacimiento</h4>
 
             <div class="ulpgcds-form__item">
@@ -88,8 +87,8 @@
             </div>
 
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-                <label for="dropdown">País</label>
-                <select id="dropdown" name="dropdown">
+                <label for="dropdownPais">País</label>
+                <select id="dropdownPais" name="dropdown">
                     <option value="" >Escoja una opción</option>
                     <option value="1">España</option>
                     <option value="2">Estados Unidos</option>
@@ -101,8 +100,8 @@
             </div>
 
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-                <label for="dropdown">Provincia</label>
-                <select id="dropdown" name="dropdown">
+                <label for="dropdownProvincia">Provincia</label>
+                <select id="dropdownProvincia" name="dropdown">
                     <option value="" >Escoja una opción</option>
                     <option value="1">Andalucía</option>
                     <option value="2">Cataluña</option>
@@ -114,8 +113,8 @@
             </div>
 
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-                <label for="dropdown">Municipio</label>
-                <select id="dropdown" name="dropdown">
+                <label for="dropdownMuni">Municipio</label>
+                <select id="dropdownMuni" name="dropdown">
                     <option value="" >Escoja una opción</option>
                     <option value="6">Mogán</option>
                     <option value="4">Telde</option>
@@ -126,28 +125,28 @@
                 </select>
             </div>
 
-            <hr class="divider-2"></hr>
+            <hr class="divider-2">
             <h4 class="title-m color-orange">3. Domicilio familiar</h4>
 
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Dirección</label>
-                <input id="text-input-id-1" name="text-input" {#required="required"#} type="text"/>
+                <label for="inputDireccion">Dirección</label>
+                <input id="inputDireccion" name="text-input" {#required="required"#} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Número</label>
-                <input id="text-input-id-1" name="text-input" {#required="required"#} type="text"/>
+                <label for="inputNumero">Número</label>
+                <input id="inputNumero" name="text-input" {#required="required"#} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Bloque/Escalera/Piso/Portal (Opcional)</label>
-                <input id="text-input-id-1" name="text-input" type="text"/>
+                <label for="inputBloque">Bloque/Escalera/Piso/Portal (Opcional)</label>
+                <input id="inputBloque" name="text-input" type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Código Postal</label>
-                <input id="text-input-id-1" name="text-input" {#required="required"#} type="text"/>
+                <label for="inputPostal">Código Postal</label>
+                <input id="inputPostal" name="text-input" {#required="required"#} type="text"/>
             </div>
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-                <label for="dropdown">País</label>
-                <select id="dropdown" name="dropdown">
+                <label for="dropdownFamiliaPais">País</label>
+                <select id="dropdownFamiliaPais" name="dropdown">
                     <option value="" >Escoja una opción</option>
                     <option value="1">España</option>
                     <option value="2">Estados Unidos</option>
@@ -158,8 +157,8 @@
                 </select>
             </div>
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-                <label for="dropdown">Provincia</label>
-                <select id="dropdown" name="dropdown">
+                <label for="dropdownFamiliaProvi">Provincia</label>
+                <select id="dropdownFamiliaProvi" name="dropdown">
                     <option value="" >Escoja una opción</option>
                     <option value="1">Andalucía</option>
                     <option value="2">Cataluña</option>
@@ -170,32 +169,32 @@
                 </select>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Localidad/Barrio</label>
-                <input id="text-input-id-1" name="text-input" {#required="required"#} type="text"/>
+                <label for="inputLocalidad">Localidad/Barrio</label>
+                <input id="inputLocalidad" name="text-input" {#required="required"#} type="text"/>
             </div>
 
-            <hr class="divider-2"></hr>
+            <hr class="divider-2">
             <h4 class="title-m color-orange">4. Domicilio durante el curso (sólo si es diferente del anterior)</h4>
 
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Dirección</label>
-                <input id="text-input-id-1" name="text-input" type="text"/>
+                <label for="repreDir">Dirección</label>
+                <input id="repreDir" name="text-input" type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Número</label>
-                <input id="text-input-id-1" name="text-input" type="text"/>
+                <label for="repreNum">Número</label>
+                <input id="repreNum" name="text-input" type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Bloque/Escalera/Piso/Portal</label>
-                <input id="text-input-id-1" name="text-input" type="text"/>
+                <label for="repreBloque">Bloque/Escalera/Piso/Portal</label>
+                <input id="repreBloque" name="text-input" type="text"/>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Código Postal</label>
-                <input id="text-input-id-1" name="text-input" type="text"/>
+                <label for="reprePostal">Código Postal</label>
+                <input id="reprePostal" name="text-input" type="text"/>
             </div>
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-                <label for="dropdown">País</label>
-                <select id="dropdown" name="dropdown">
+                <label for="reprePais">País</label>
+                <select id="reprePais" name="dropdown">
                     <option value="" >Escoja una opción</option>
                     <option value="1">España</option>
                     <option value="2">Estados Unidos</option>
@@ -206,8 +205,8 @@
                 </select>
             </div>
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
-                <label for="dropdown">Provincia</label>
-                <select id="dropdown" name="dropdown">
+                <label for="repreProvi">Provincia</label>
+                <select id="repreProvi" name="dropdown">
                     <option value="" >Escoja una opción</option>
                     <option value="1">Andalucía</option>
                     <option value="2">Cataluña</option>
@@ -218,13 +217,12 @@
                 </select>
             </div>
             <div class="ulpgcds-form__item">
-                <label for="text-input-id-1">Localidad/Barrio</label>
-                <input id="text-input-id-1" name="text-input" type="text"/>
+                <label for="repreLocalidad">Localidad/Barrio</label>
+                <input id="repreLocalidad" name="text-input" type="text"/>
             </div>
 
             <input class="ulpgcds-btn ulpgcds-btn--primary"
                    type="submit" value="Continuar"/>
-            {#        <a href="matricula2" class="ulpgcds-btn ulpgcds-btn--primary">Continuar</a>#}
         </form>
     </div>
 
