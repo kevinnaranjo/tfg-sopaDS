@@ -4,14 +4,11 @@
     <div id="logo" style="width: 30%">
         <a id="logoInicio" href="inicio"> <img src="assets/version_max_red_2t.svg" alt="Error al cargar la imagen"></a>
     </div>
-    <div>
-        <h1  class="title-xl"> FSO - Fundamentos de los Sistemas Operativos
-        </h1>
-    </div>
     <nav aria-label="Breadcrumb" class="ulpgcds-breadcrumb ml-5 pb-5">
         <div>Te encuentras en:</div>
         <ul>
-            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC · Inicio</a></li>
+            <li class="ulpgcds-breadcrumb__item"><a class="ulpgcds-breadcrumb__item__link first" href="inicio">ULPGC ·
+                    Inicio</a></li>
             <li class="ulpgcds-breadcrumb__item">ULPGC · Matrícula</li>
         </ul>
     </nav>
@@ -31,21 +28,21 @@
             <h4 class="title-m color-orange">1. Identificación</h4>
             <div class="ulpgcds-form__item">
                 <label for="inputNombre">Nombre</label>
-                <input id="inputNombre" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputNombre" name="text-input" {# required="required" #} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputApe">Apellidos</label>
-                <input id="inputApe" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputApe" name="text-input" {# required="required" #} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputDni">DNI</label>
-                <input id="inputDni" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputDni" name="text-input" {# required="required" #} type="text"/>
                 <div id="helpDni" class="help-text">Introduzca su DNI sin letra</div>
             </div>
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="dropdown">Nacionalidad</label>
                 <select id="dropdown" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="1">España</option>
                     <option value="2">Estados Unidos</option>
                     <option value="3">Francia</option>
@@ -55,12 +52,14 @@
                 </select>
             </div>
             <div class="ulpgcds-form__item">
-                <fieldset id="fieldsetSexo" class="ulpgcds-form__item ulpgcds-form__item--inline"><legend>Sexo</legend>
+                <fieldset id="fieldsetSexo" class="ulpgcds-form__item ulpgcds-form__item--inline">
+                    <legend>Sexo</legend>
                     <div class="ulpgcds-form__item__radio">
-                        <input id="option3" name="radio" type="radio" /> <label for="option3">Masculino</label>
+                        <input id="option3" name="radio" type="radio"/> <label for="option3">Masculino</label>
                     </div>
                     <div class="ulpgcds-form__item__radio">
-                        <input checked="checked" id="option4" name="radio" type="radio" /><label for="option4">Femenino</label>
+                        <input checked="checked" id="option4" name="radio" type="radio"/><label
+                                for="option4">Femenino</label>
                     </div>
                 </fieldset>
             </div>
@@ -70,11 +69,11 @@
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputMovil">Teléfono Móvil</label>
-                <input id="inputMovil" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputMovil" name="text-input" {# required="required" #} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputCorreo">Correo electrónico</label>
-                <input id="inputCorreo" name="text-input" {#required="required"#} type="email"/>
+                <input id="inputCorreo" name="text-input" {# required="required" #} type="email"/>
             </div>
 
             <hr class="divider-2">
@@ -82,14 +81,15 @@
 
             <div class="ulpgcds-form__item">
                 <label for="fecha-datepicker-2">Fecha de nacimiento</label>
-                <input autocomplete="off" class="ulpgcds-datepicker ulpgcds-form__item--icon" id="fecha-datepicker-2" name="fecha" type="text" value="" placeholder="dd/mm/aaaa" />
+                <input autocomplete="off" class="ulpgcds-datepicker ulpgcds-form__item--icon" id="fecha-datepicker-2"
+                       name="fecha" type="text" value="" placeholder="dd/mm/aaaa"/>
                 <span class="ulpgcds-icon-calendar"></span>
             </div>
 
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="dropdownPais">País</label>
                 <select id="dropdownPais" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="1">España</option>
                     <option value="2">Estados Unidos</option>
                     <option value="3">Francia</option>
@@ -102,7 +102,7 @@
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="dropdownProvincia">Provincia</label>
                 <select id="dropdownProvincia" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="1">Andalucía</option>
                     <option value="2">Cataluña</option>
                     <option value="5">Extremadura</option>
@@ -115,7 +115,7 @@
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="dropdownMuni">Municipio</label>
                 <select id="dropdownMuni" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="6">Mogán</option>
                     <option value="4">Telde</option>
                     <option value="1">Teror</option>
@@ -130,11 +130,11 @@
 
             <div class="ulpgcds-form__item">
                 <label for="inputDireccion">Dirección</label>
-                <input id="inputDireccion" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputDireccion" name="text-input" {# required="required" #} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputNumero">Número</label>
-                <input id="inputNumero" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputNumero" name="text-input" {# required="required" #} type="text"/>
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputBloque">Bloque/Escalera/Piso/Portal (Opcional)</label>
@@ -142,12 +142,12 @@
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputPostal">Código Postal</label>
-                <input id="inputPostal" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputPostal" name="text-input" {# required="required" #} type="text"/>
             </div>
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="dropdownFamiliaPais">País</label>
                 <select id="dropdownFamiliaPais" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="1">España</option>
                     <option value="2">Estados Unidos</option>
                     <option value="3">Francia</option>
@@ -159,7 +159,7 @@
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="dropdownFamiliaProvi">Provincia</label>
                 <select id="dropdownFamiliaProvi" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="1">Andalucía</option>
                     <option value="2">Cataluña</option>
                     <option value="5">Extremadura</option>
@@ -170,7 +170,7 @@
             </div>
             <div class="ulpgcds-form__item">
                 <label for="inputLocalidad">Localidad/Barrio</label>
-                <input id="inputLocalidad" name="text-input" {#required="required"#} type="text"/>
+                <input id="inputLocalidad" name="text-input" {# required="required" #} type="text"/>
             </div>
 
             <hr class="divider-2">
@@ -195,7 +195,7 @@
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="reprePais">País</label>
                 <select id="reprePais" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="1">España</option>
                     <option value="2">Estados Unidos</option>
                     <option value="3">Francia</option>
@@ -207,7 +207,7 @@
             <div class="ulpgcds-form__item ulpgcds-form__item--type-select">
                 <label for="repreProvi">Provincia</label>
                 <select id="repreProvi" name="dropdown">
-                    <option value="" >Escoja una opción</option>
+                    <option value="">Escoja una opción</option>
                     <option value="1">Andalucía</option>
                     <option value="2">Cataluña</option>
                     <option value="5">Extremadura</option>
@@ -226,24 +226,10 @@
         </form>
     </div>
 
-
     <footer>
-        <div class="ulpgcds-footer">
-            <div class="ulpgcds-footer__top wrapper float-left mb-3">
-                <div class="row mx-auto">
-                    <div class="col-6">
-                        <div class="footer-logo">
-                            <a href="/"><img src="assets/img/sopaxx.gif" alt="[S.Op.]" align="bottom" border="0"></a>
-                            <a class="m-1 align-bottom" href="/design">Portada</a>
-                            <p class="copyright p-2">&copy; 1994-2020 Universidad de Las Palmas de Gran Canaria</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ulpgcds-footer__bottom">
-                <div class="wrapper">
-                    <p>© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
-                </div>
+        <div class="ulpgcds-footer__bottom">
+            <div class="wrapper">
+                <p style="margin-bottom: 0">© Universidad de Las Palmas de Gran Canaria · ULPGC</p>
             </div>
         </div>
     </footer>
@@ -280,7 +266,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a5b87c29a1.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
-    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet" />
+    <link href="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.css" media="all" rel="stylesheet"/>
     <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/chosen/chosen.jquery.js"></script>
     <script src="https://cdn.ulpgc.es/ulpgcds/1.0/js/jquery.ui/datepicker.js"></script>
 {% endblock %}
